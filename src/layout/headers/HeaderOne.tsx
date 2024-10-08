@@ -33,7 +33,7 @@ const HeaderOne = ({ style }: { style: any}) => {
                                     <nav className="menu-nav">
                                         <div className="logo">
                                             <Link href="/">
-                                                <Image src={sticky ? logo_1 : style ? logo_2 : logo_1} alt="Logo" />
+                                                <Image src={sticky ? logo_1 : style ? logo_2 : logo_1} alt="Healy Logo" />
                                             </Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-xl-flex justify-content-center">
