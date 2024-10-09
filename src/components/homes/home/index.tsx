@@ -12,6 +12,7 @@ import HomeOneBlog from "./HomeOneBlog"
 import FooterOne from "@/layout/footer/FooterOne"
 import HomeOneFactArea from "./HomeOneFactArea"
 import HomeOneShop from "./HomeOneShop"
+import WhatsAppButton from "@/components/common/WhatsAppButton"
 
 const HomeOne = () => {
   return (
@@ -30,6 +31,8 @@ const HomeOne = () => {
         {/* <HomeOnePricing style={true} inner_style={false} /> */}
         {/* <HomeOneTestimonial /> */}
         {/* <HomeOneBlog /> */}
+      <WhatsAppButton phoneNumber="905454467721" />
+
       </main>
       <FooterOne style={true} />
     </>

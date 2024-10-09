@@ -15,7 +15,7 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                      <p>Bütünsel Sağlık, beden, zihin ve ruhun birlik ve uyum duygusudur, kapsayıcı bir refah ve canlılık deneyimlemektir. Yaşama tam kapasitenizle katılmanızı sağlar.</p>
                   </div>
                   <div className="offcanvas-contact">
-                     <h4 className="number">+90 222 222 22 22</h4>
+                     <h4 className="number">+90 545 446 77 21</h4>
                      <h4 className="email">herseyfrekans@gmail.com</h4>
                      <p> Türkiye</p>
                      <ul className="offcanvas-social list-wrap">
