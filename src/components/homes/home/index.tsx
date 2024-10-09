@@ -31,7 +31,6 @@ const HomeOne = () => {
         {/* <HomeOnePricing style={true} inner_style={false} /> */}
         {/* <HomeOneTestimonial /> */}
         {/* <HomeOneBlog /> */}
-      <WhatsAppButton phoneNumber="905454467721" />
 
       </main>
       <FooterOne style={true} />
