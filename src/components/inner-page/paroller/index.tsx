@@ -9,7 +9,7 @@ const Paroller = () => {
     <>
       <HeaderOne style={true} />
       <main className="fix">
-        <Breadcrumb title="Inner Product" />
+        <Breadcrumb title="Healy Frekans Cihazları" />
         <HomeOnefeatureProduct style={true} />
         <HomeOneShop style={true} inner_style={true} />
       </main>

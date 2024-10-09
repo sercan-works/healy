@@ -10,9 +10,9 @@ const IngredientOne = () => {
     <>
       <HeaderOne style={true} />
       <main className="fix">
-        <Breadcrumb title="Ingredient" />
+        <Breadcrumb title="HEALY PROGRAMLARI" />
         <HomeOneFactArea style={true} />
-        <HomeOneIngredient />
+        {/* <HomeOneIngredient /> */}
         <HomeOneShop inner_style={true} />
       </main>
       <FooterOne style={true} />

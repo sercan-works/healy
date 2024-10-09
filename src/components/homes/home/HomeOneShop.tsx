@@ -85,7 +85,7 @@ const HomeOneShop = ({ style, inner_style }: any) => {
       <section className={`home-shop-area ${inner_style?"inner-home-shop":""}`}>
          <div className="container">
             <div className="related-products-wrap">
-               {style ? <h2 className="title">Related Products</h2> : ""}
+               {style ? <h2 className="title">DİĞER HEALY FREKANS CİHAZLARI</h2> : ""}
                <Slider {...settings} className="row home-shop-active">
                   {shop_data.filter((item) => item.page === "home_1").map((item) => (
                      <div key={item.id} className="col-xl-3">
@@ -99,14 +99,15 @@ const HomeOneShop = ({ style, inner_style }: any) => {
                            </div>
                            <div className="home-shop-content">
                               <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
-                              <span className="home-shop-price">${item.price}</span>
+                              <span className="home-shop-price">{item.price}₺</span>
                               <div className="home-shop-rating">
                                  <Rating initialValue={item.rating} size={20} readonly={true} />
                                  <span className="total-rating">({item.total_rating})</span>
                               </div>
                               <div className="shop-content-bottom">
-                                 <a style={{cursor:"pointer"}} onClick={() => handleAddToCart(item)} className="cart"><i className="flaticon-shopping-cart-1"></i></a>
-                                 <Link href={`/shop-details/${item.id}`} className="eg-btn btn-two">Buy Now</Link>
+                                 {/* <a style={{cursor:"pointer"}} onClick={() => handleAddToCart(item)} className="cart"><i className="flaticon-shopping-cart-1"></i></a> */}
+                                 {/* <Link href={`/shop-details/${item.id}`} className="eg-btn btn-two flex mx-auto">Satın Al</Link> */}
+                                 <Link href={`https://turkiye.healy.shop/?partnername=0136-1592-2551`} target="_blank" className="eg-btn btn-two flex mx-auto">Satın Al</Link>
                               </div>
                            </div>
                         </div>

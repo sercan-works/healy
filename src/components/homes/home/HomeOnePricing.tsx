@@ -96,7 +96,7 @@ const HomeOnePricing = ({ style, inner_style }: any) => {
                                  <Image src={item.thumb} alt="img" />
                               </div>
                               <div className="pricing-price">
-                                 <h4 className="price">${item.price}</h4>
+                                 <h4 className="price">{item.price}₺</h4>
                                  <span>per <br /> bottle</span>
                               </div>
                               <h5 className="total">(${item.total} TOTAL)</h5>

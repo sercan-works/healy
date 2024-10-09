@@ -13,8 +13,8 @@ const HomeOneBlog = () => {
                   <div className="col-lg-6 col-md-10">
                      <div className="blog-posts-wrapper">
                         <div className="section-title mb-50">
-                           <p className="sub-title">.. Suxnix News ..</p>
-                           <h2 className="title">Latest News</h2>
+                           <p className="sub-title">.. HEALY BLOG ..</p>
+                           <h2 className="title">Son Yazılar</h2>
                         </div>
                         
                         {blog_data.filter((item) => item.page === "home_1").map((item) => (

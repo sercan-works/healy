@@ -24,12 +24,12 @@ const HomeOne = () => {
         <HomeOnefeatureProduct style={false} />
         <HomeOneShop style={false} inner_style={false} />
         <HomeOneVideoArea />
-        <HomeOneFactArea style={false} />
-        <HomeOneIngredient />
-        <HomeOneFormula />
-        <HomeOnePricing style={true} inner_style={false} />
-        <HomeOneTestimonial />
-        <HomeOneBlog />
+        {/* <HomeOneFactArea style={false} /> */}
+        {/* <HomeOneIngredient /> */}
+        {/* <HomeOneFormula /> */}
+        {/* <HomeOnePricing style={true} inner_style={false} /> */}
+        {/* <HomeOneTestimonial /> */}
+        {/* <HomeOneBlog /> */}
       </main>
       <FooterOne style={true} />
     </>

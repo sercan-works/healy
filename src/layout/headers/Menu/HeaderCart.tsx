@@ -34,7 +34,7 @@ const HeaderCart = ({ cartOpen, setCartOpen }: any) => {
                         <div className="mini-cart-content">
                            <h4 className="product-title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
                            <div className="mini-cart-price">{item.quantity} ×
-                              <span className="woocommerce-Price-amount amount">${item.price}</span>
+                              <span className="woocommerce-Price-amount amount">{item.price}₺</span>
                            </div>
                         </div>
                      </li>
@@ -44,7 +44,7 @@ const HeaderCart = ({ cartOpen, setCartOpen }: any) => {
             }
             <p className="woocommerce-mini-cart__total">
                <strong>Subtotal:</strong>
-               <span className="woocommerce-Price-amount">${total.toFixed(2)}</span>
+               <span className="woocommerce-Price-amount">{total.toFixed(2)}₺</span>
             </p>
             <p className="checkout-link">
                <Link href="/cart" className="button wc-forward">View cart</Link>

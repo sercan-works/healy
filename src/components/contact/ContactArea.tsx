@@ -1,6 +1,11 @@
+import Link from "next/link";
+import { BsInstagram } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+
 interface DataType {
    id: number;
-   icon: string;
+   icon: React.ReactNode;
    title: string;
    info: JSX.Element;
 }
@@ -8,21 +13,21 @@ interface DataType {
 const contact_data: DataType[] = [
    {
       id: 1,
-      icon: "far fa-map",
-      title: "Office Address",
-      info: (<>99 NY Address Street, Brooklyn, United State</>),
+      icon: <FaInstagram />,
+      title: "INSTAGRAM",
+      info: (<><Link href="https://www.instagram.com/sercan_healy/?igsh=MXA1ZmI5bjY2aXM1dg%3D%3D" target="_blank">Profile git</Link></>),
    },
    {
       id: 2,
-      icon: "fas fa-phone",
-      title: "Phone Number",
-      info: (<>875 7556 464 7658 <br /> 765 648 567 98</>),
+      icon: <FaWhatsapp />,
+      title: "WHATSAPP",
+      info: (<><Link href="https://wa.me/905454467721" target="_blank">Sohbete Başla</Link></>),
    },
    {
       id: 3,
-      icon: "fas fa-globe",
-      title: "Web Connect",
-      info: (<>info@suxnixmail.com <br /> suxnixexample.com</>),
+      icon: <CiMail />,
+      title: "MAIL",
+      info: (<>herseyfrekans@gmail.com</>),
    },
 ]
 
@@ -37,7 +42,7 @@ const ContactArea = () => {
                         <div className="contact-box">
                            <div className="contact-icon">
                               <span className="overlay-icon"><i className="fas fa-check"></i></span>
-                              <i className={item.icon}></i>
+                              {item.icon}
                            </div>
                            <div className="contact-content">
                               <h5 className="title">{item.title}</h5>

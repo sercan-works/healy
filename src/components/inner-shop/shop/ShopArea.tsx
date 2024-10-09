@@ -191,7 +191,7 @@ const ShopArea = () => {
                <div className="col-xl-3 col-lg-4 col-md-8 col-sm-8">
                   <aside className="shop-sidebar">
                      <div className="widget">
-                        <h4 className="sidebar-title">Filter by Price</h4>
+                        <h4 className="sidebar-title">Fiyata Göre Filtrele</h4>
                         <div className="price_filter">
                            <div id="slider-range mb-20">
                               <InputRange
@@ -203,14 +203,14 @@ const ShopArea = () => {
                               />
                            </div>
                            <div className="price_slider_amount">
-                              <span onChange={() => handleChanges}>Price : ${priceValue[0]} - ${priceValue[1]}</span>
-                              <input type="submit" className="eg-btn" value="Filter" />
+                              <span onChange={() => handleChanges}>Price : {priceValue[0]}₺ - {priceValue[1]}₺</span>
+                              <input type="submit" className="eg-btn" value="Filtrele" />
                            </div>
                         </div>
                      </div>
 
                      <div className="widget">
-                        <h4 className="sidebar-title">CATEGORIES</h4>
+                        <h4 className="sidebar-title">Kategoriler</h4>
                         <ul className="categories-list list-wrap">
                            {allCategory.map((cate_item: any, i: any) =>
                               <li key={i}>
@@ -224,7 +224,7 @@ const ShopArea = () => {
                      </div>
 
                      <div className="widget">
-                        <h4 className="sidebar-title">LATEST PRODUCTS</h4>
+                        <h4 className="sidebar-title">Son eklenen ürünler</h4>
                         <div className="lp-post-list">
                            <ul className="lp-post-item list-wrap">
                               {currentItems.slice(0, 3).map((item, index) =>
@@ -239,7 +239,7 @@ const ShopArea = () => {
                                           </li>
                                        </ul>
                                        <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
-                                       <span className="price">${item.price}</span>
+                                       <span className="price">{item.price}₺</span>
                                     </div>
                                  </li>
                               )}
@@ -248,7 +248,7 @@ const ShopArea = () => {
                      </div>
 
                      <div className="widget">
-                        <h4 className="sidebar-title">Product tags</h4>
+                        <h4 className="sidebar-title">Ürün etiketleri</h4>
                         <ul className="Product-tag-list list-wrap">
                            {allTags.map((tag_item, index) =>
                               <li key={index}><a style={{ cursor: "pointer" }} onClick={() => handleTags(tag_item)}>{tag_item}</a></li>
@@ -298,7 +298,7 @@ const ShopArea = () => {
                                  <div className="home-shop-content">
                                     <div className="shop-item-cat"><Link href="#">{item.tag}</Link></div>
                                     <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
-                                    <span className="home-shop-price">${item.price}</span>
+                                    <span className="home-shop-price">{item.price}₺</span>
                                     <div className="home-shop-rating">
                                        <Rating initialValue={item.rating} size={20} readonly={true} />
                                        <span className="total-rating">({item.total_rating})</span>

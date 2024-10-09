@@ -8,7 +8,7 @@ const Blog = () => {
       <>
          <HeaderOne style={true} />
          <main className="main-area fix">
-            <Breadcrumb title="Our Blog" />
+            <Breadcrumb title="Healy Blog" />
             <BlogArea/>
          </main>
          <FooterOne style={false} />

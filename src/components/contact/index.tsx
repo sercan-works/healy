@@ -9,9 +9,9 @@ const Contact = () => {
       <>
          <HeaderOne style={true} />
          <main>
-            <Breadcrumb title="Contact" />
+            <Breadcrumb title="İLETİŞİM" />
             <ContactArea/>
-            <ContactMap/>
+            {/* <ContactMap/> */}
          </main>
          <FooterOne style={true} />
       </>

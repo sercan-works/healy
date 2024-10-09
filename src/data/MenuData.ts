@@ -130,7 +130,7 @@ const menu_data: MenuItem[] = [
       title: "Shop",
       link: "/shop",
       sub_menus: [
-         { link: "/shop", title: "Our Shop" },
+         { link: "/shop", title: "Healy Shop" },
          { link: "/shop-details", title: "Shop-Details" },
          { link: "/cart", title: "Cart" },
          { link: "/checkout", title: "Checkout" },

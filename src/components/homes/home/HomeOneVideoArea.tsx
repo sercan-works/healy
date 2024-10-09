@@ -32,7 +32,7 @@ const HomeOneVideoArea = () => {
             <VideoPopup
                 isVideoOpen={isVideoOpen}
                 setIsVideoOpen={setIsVideoOpen}
-                videoId={"Ml4XCF-JS0k"}
+                videoId={"vTk8mozLtBg"}
             />
             {/* video modal end */}
         </>
