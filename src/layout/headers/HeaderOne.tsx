@@ -12,6 +12,9 @@ import HeaderOffcanvas from "./Menu/HeaderOffcanvas";
 
 import logo_1 from "@/assets/img/logo/logo.png";
 import logo_2 from "@/assets/img/logo/white_logo.png";
+import { GiLightningFrequency } from "react-icons/gi";
+import React from 'react';
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HeaderOne = ({ style }: { style: any}) => {
     const { sticky } = UseSticky();
@@ -33,7 +36,21 @@ const HeaderOne = ({ style }: { style: any}) => {
                                     <nav className="menu-nav">
                                         <div className="logo">
                                             <Link href="/">
-                                                <Image src={sticky ? logo_1 : style ? logo_2 : logo_1} alt="Healy Logo" />
+                                                {sticky || !style ? (
+                                                    // <Image src={logo_1} alt="Healy Logo" />
+                                                    <>
+                                                <div className="flex flex-col text-center ml-10 ">
+                                                    <h1 className="text-gray-800 flex my-2 text-center text-2xl  ">Herşey <span><GiLightningFrequency /></span>Frekans</h1>
+                                                    <p className="text-gray-400 text-xs flex flex-row items-center justify-between "><span className="text-pink-500 flex items-center"><MdKeyboardArrowRight />Sağlık</span> <span className="text-green-400 flex items-center"><MdKeyboardArrowRight />Refah</span> <span className="text-blue-400 flex items-center"><MdKeyboardArrowRight />Canlılık</span></p>
+                                                    </div>
+                                                    </>
+                                                ) : (<>
+                                                <div className="flex flex-col text-center ml-10 ">
+                                                    <h1 className="text-white flex my-2 text-center ">Herşey <span><GiLightningFrequency /></span>Frekans</h1>
+                                                    <p className="text-gray-400 text-xs"><span className="text-pink-300">Sağlık</span> <span className="text-green-100">Refah</span> <span className="text-blue-100">Canlılık</span></p>
+                                                    </div>
+                                                    </>
+                                                )}
                                             </Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-xl-flex justify-content-center">
@@ -41,12 +58,12 @@ const HeaderOne = ({ style }: { style: any}) => {
                                         </div>
                                         <div className="header-action d-none d-sm-block">
                                             <ul>
-                                                <li className="header-shop-cart">
+                                                {/* <li className="header-shop-cart">
                                                     <a style={{ cursor: "pointer" }} onClick={() => setCartOpen(true)} className="cart-count"><i className="flaticon-shopping-cart"></i>
                                                         <span className="mini-cart-count">{productItem.length}</span>
                                                     </a>
                                                     <HeaderCart />
-                                                </li>
+                                                </li> */}
                                                 <li className="header-search"><a style={{ cursor: "pointer" }} onClick={() => setIsSearch(true)}><i className="flaticon-search"></i></a></li>
                                                 <li className="offCanvas-btn d-none d-xl-block"><a style={{ cursor: "pointer" }} onClick={() => setOffCanvas(true)} className="bar-button"><i className="flaticon-layout"></i></a>
                                                 </li>

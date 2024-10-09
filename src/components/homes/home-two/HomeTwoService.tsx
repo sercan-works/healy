@@ -1,48 +1,53 @@
 import Link from "next/link";
+import { FaCheck, FaGears, FaHeadSideVirus, FaStudiovinari } from "react-icons/fa6";
+import React from "react";
+import { IoBodyOutline } from "react-icons/io5";
+import { GiHeartInside } from "react-icons/gi";
+import { MdOutlinePets } from "react-icons/md";
 
-interface DataType {
+interface ServiceItem {
    id: number;
-   icon: string;
+   icon: React.ReactNode;
    title: string;
-   desc: JSX.Element;
+   desc: React.ReactNode;
 }
 
-const service_data: DataType[] = [
+const serviceItems: ServiceItem[] = [
    {
       id: 1,
-      icon: "flaticon-vitamins-1",
-      title: "Dietary Supplement",
-      desc: (<>Dmnis iste natus error sit voluptatem accusantium dolore laudantium rem voluptatem sit aperiam.</>),
+      icon: <FaGears />,
+      title: "Genel Prensibi",
+      desc: <>Frekans terapisi, hücrelerin sağlıklı bir şekilde çalışmasını desteklemek için vücuda enerji gönderme prensibine dayanır.</>,
    },
    {
       id: 2,
-      icon: "flaticon-supplement",
-      title: "Formula Innovative",
-      desc: (<>Dmnis iste natus error sit voluptatem accusantium dolore laudantium rem voluptatem sit aperiam.</>),
+      icon: <FaStudiovinari />,
+      title: "Rahatlama Hissi",
+      desc: (<>Healy cihazı, vücuttaki hücrelerin rezonansını veya enerjisini dengelemeyi amaçlar. Bu denge, hücrelerin sağlıklı bir şekilde çalışmasını sağlar.</>),
    },
    {
       id: 3,
-      icon: "flaticon-vitamins",
-      title: "Protein Capsule",
-      desc: (<>Dmnis iste natus error sit voluptatem accusantium dolore laudantium rem voluptatem sit aperiam.</>),
+      icon: <FaHeadSideVirus />,
+      title: "Stresi Hafifletme",
+      desc: (<>Healy kullanıcılarının %87&apos;si stresi dengelemek için kullanıyor.</>),
    },
    {
       id: 4,
-      icon: "flaticon-protein-2",
-      title: "Nutrients Provide",
-      desc: (<>Dmnis iste natus error sit voluptatem accusantium dolore laudantium rem voluptatem sit aperiam.</>),
+      icon: <IoBodyOutline />,
+      title: "Fiziksel Dönüşümler",
+      desc: (<>Fitness, enerji, güzellik ve birçok fiziksel konuda enerji alınıza müdahele eder.</>),
    },
    {
       id: 5,
-      icon: "flaticon-tape-measure",
-      title: "Food Synthetic",
-      desc: (<>Dmnis iste natus error sit voluptatem accusantium dolore laudantium rem voluptatem sit aperiam.</>),
+      icon: <GiHeartInside />,
+      title: "Genel Esenliğin Sağlanması",
+      desc: (<>Fizikselin yanı sıra mental sağlık üzerinde büyük etkisi vardır. Sonuçta herşey frekanstır.</>),
    },
    {
       id: 6,
-      icon: "flaticon-abs-1",
-      title: "Supplement Manual",
-      desc: (<>Dmnis iste natus error sit voluptatem accusantium dolore laudantium rem voluptatem sit aperiam.</>),
+      icon: <MdOutlinePets />,
+      title: "Hayvanlar ve Diğer Herşey",
+      desc: (<>Hayvan dostlarımızın yada maddenin enerji alanına odaklanarak negatif frekansları dengeler.</>),
    },
 ]
 
@@ -54,23 +59,25 @@ const HomeTwoService = ({ style, style_2 }: any) => {
                <div className="row justify-content-center">
                   <div className="col-lg-8">
                      <div className="tg-section-title text-center mb-60">
-                        <span className="sub-title">Suxnix Features</span>
-                        <h2 className="title">Supplement Features</h2>
+                        <span className="sub-title">Healy Nedir ?</span>
+                        <h2 className="title">GENEL ÖZELLİKLER</h2>
                      </div>
                   </div>
                </div>
+               
                <div className="row justify-content-center">
-                  {service_data.map((item) => (
+                  {serviceItems.map((item) => (
                      <div key={item.id} className="col-lg-4 col-md-6 col-sm-9">
                         <div className="tg-service-item">
                            <div className="tg-services-count">0{item.id}</div>
                            <div className="icon">
-                              <i className={item.icon}></i>
+                              {/* <i className={item.icon}></i> */}
+                              {item.icon}
                            </div>
                            <h2 className="title"><Link href="contact.html">{item.title}</Link></h2>
                            <div className="tg-service-content">
                               <p>{item.desc}</p>
-                              <Link href="/contact"><i className="fas fa-arrow-circle-right"></i>Read More</Link>
+                              <Link href="/contact"><i className="fas fa-plus"></i>Daha Fazla Bilgi</Link>
                            </div>
                         </div>
                      </div>

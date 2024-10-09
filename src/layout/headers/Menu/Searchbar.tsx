@@ -25,7 +25,7 @@ const Searchbar = ({ isSearch, setIsSearch }: any) => {
                                     <form onSubmit={handleSubmit}>
                                         <input
                                             type="text"
-                                            placeholder="Enter your keyword..."
+                                            placeholder="Aramak istediğiniz kelimeyi giriniz..."
                                             value={searchValue}
                                             onChange={handleSearchChange}
                                         />

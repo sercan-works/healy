@@ -15,7 +15,7 @@ const Breadcrumb = ({ title }: any) => {
                      <nav aria-label="Breadcrumbs" className="breadcrumb-trail">
                         <ul className="breadcrumb">
                            <li className="breadcrumb-item trail-item trail-begin">
-                              <Link href="/"><span>Home</span></Link>
+                              <Link href="/"><span>Anasayfa</span></Link>
                            </li>
                            <li className="breadcrumb-item trail-item trail-end"><span>{title}</span></li>
                         </ul>

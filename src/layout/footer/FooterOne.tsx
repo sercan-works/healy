@@ -7,6 +7,8 @@ import footer_logo from "@/assets/img/logo/white_logo.png";
 import payment_card from "@/assets/img/others/card_img.png";
 import footerShape_1 from "@/assets/img/others/footer_shape01.png";
 import footerShape_2 from "@/assets/img/others/footer_shape02.png";
+import { GiLightningFrequency } from "react-icons/gi";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 interface DataType {
    id: number;
@@ -22,16 +24,16 @@ const footer_data: DataType[] = [
    {
       id: 1,
       class_name: "col-lg-3",
-      title: "About Us",
-      footer_link: [{ link: "#", link_title: "About Company" }, { link: "#", link_title: "Affiliate Program" }, { link: "#", link_title: "Customer Spotlight" }, { link: "#", link_title: "Reseller Program" }, { link: "/shop", link_title: "Our Shop" }, { link: "#", link_title: "Price & Plans" },]
+      title: "Hakkımızda",
+      footer_link: [ { link: "#", link_title: "iş Ortaklığı" }, { link: "", link_title: "Ürünlerimiz" }, { link: "#", link_title: "Kampanyalar" },{ link: "#", link_title: "Healy Frekans Cihazı" },]
    },
    {
       id: 2,
       class_name: "col-lg-2",
-      title: "Support",
-      footer_link: [{ link: "#", link_title: "About Company" }, { link: "#", link_title: "Affiliate Program" }, { link: "#", link_title: "Customer Spotlight" }, { link: "#", link_title: "Reseller Program" }, { link: "/shop", link_title: "Our Shop" }, { link: "#", link_title: "Price & Plans" },]
+      title: "Cihazlarımız",
+      footer_link: [ { link: "#", link_title: "Healy Rezonans" }, { link: "#", link_title: "Healy Rezonans Plus" }, { link: "#", link_title: "Healy Obdisyen" },{ link: "#", link_title: "Mag Healy" },]
    },
-]
+]  
 
 const FooterOne = ({style}:any) => {
    return (
@@ -45,10 +47,17 @@ const FooterOne = ({style}:any) => {
                         <div className="footer-widget">
                            <div className="footer-about">
                               <div className="footer-logo logo">
-                                 <Link href="/"><Image src={footer_logo} alt="Logo" /></Link>
+                                 <Link href="/">
+                                 {/* <Image src={footer_logo} alt="Logo" /> */}
+                                 <div className="flex flex-col text-center ml-10 ">
+                                                    <h1 className="text-white flex my-2 text-center ">Herşey <span><GiLightningFrequency /></span>Frekans</h1>
+                                                    <p className="text-gray-400 text-xs flex flex-row items-center justify-start "><span className="text-pink-500 flex items-center"><MdKeyboardArrowRight />Sağlık</span> <span className="text-green-400 flex items-center"><MdKeyboardArrowRight />Refah</span> <span className="text-blue-400 flex items-center"><MdKeyboardArrowRight />Canlılık</span></p>
+
+                                                    </div>
+                                 </Link>
                               </div>
                               <div className="footer-text">
-                                 <p>Making beauty especially relating complot especial common questions tend to recur through posts or queries standards vary orem donor command tei.</p>
+                                 <p>Healy frekans cihazları ile sağlık, refah ve canlılık için bir adım daha yaklaşıyorsunuz.</p>
                               </div>
                               <div className="footer-social">
                                  <SocialIcon />
@@ -74,11 +83,10 @@ const FooterOne = ({style}:any) => {
                         <div className="footer-widget">
                            <h4 className="fw-title">CONTACT US</h4>
                            <div className="footer-contact-wrap">
-                              <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
                               <ul className="list-wrap">
-                                 <li className="phone"><i className="fas fa-phone"></i> +1 31-6555-0116</li>
-                                 <li className="mail"><i className="fas fa-envelope"></i> Suxnix@example.com</li>
-                                 <li className="website"><i className="fas fa-globe"></i> www.suxnixdomain.com</li>
+                                 <li className="phone"><i className="fas fa-phone"></i> +90 555 555 55 55</li>
+                                 <li className="mail"><i className="fas fa-envelope"></i> herseyfrekans@gmail.com</li>
+                                 <li className="website"><i className="fas fa-globe"></i> www.herseyfrekans.com</li>
                               </ul>
                            </div>
                         </div>

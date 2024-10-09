@@ -10,7 +10,7 @@ const Feature = () => {
     <>
       <HeaderOne style={true} />
       <main>
-        <Breadcrumb title="Features" />
+        <Breadcrumb title="Healy Nedir ?" />
         <Brand style={true} />
         <HomeTwoService style={true} style_2={false} />
         <HomeOneFeature style={true} />

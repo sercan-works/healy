@@ -1,10 +1,15 @@
 import Image from "next/image";
 
 import featureImg_1 from "@/assets/img/others/features_img.png";
+import { MdAnalytics } from "react-icons/md";
+import { IoAnalyticsOutline } from "react-icons/io5";
+import { GiLightningFrequency } from "react-icons/gi";
+import { FaHandHoldingHeart } from "react-icons/fa6";
+import { TbMoodHappy } from "react-icons/tb";
 
 interface DataType {
    id: number;
-   icon: string;
+   icon: React.ReactNode;
    title: string;
    desc: JSX.Element;
 }[]
@@ -12,27 +17,27 @@ interface DataType {
 const featureData: DataType[] = [
    {
       id: 1,
-      icon: "flaticon-tape-measure",
-      title: "Multi Fruits Flavour",
-      desc: (<>A thing added to something else in order to complete or enhance it.</>)
+      icon: <IoAnalyticsOutline />,
+      title: "Analiz Et",
+      desc: (<>Cep Telefonunuza yükleyeceğiniz Healy yazılımı ile kolayca kendini analiz et.</>)
    },
    {
       id: 2,
-      icon: "flaticon-test",
-      title: "Flower Formula",
-      desc: (<>A thing added to something else in order to complete or enhance it.</>)
+      icon: <GiLightningFrequency />,
+      title: "Frekans Gönder",
+      desc: (<>Analiz aşamasında çıkan sonuçlara göre cihazınızın size gönderdiği frekansı kullanarak ruhsal ve fiziksel rahatlama hissi yaşayın.</>)
    },
    {
       id: 3,
-      icon: "flaticon-weight",
-      title: "Fishbone Diagram",
-      desc: (<>A thing added to something else in order to complete or enhance it.</>)
+      icon: <FaHandHoldingHeart />,
+      title: "Frekanslarını Sevdiklerinle Paylaş",
+      desc: (<>Bu mucizevi frekansları herkes ile paylaşabilirsin, zaman ve mekan sınırlaması yok :)</>)
    },
    {
       id: 4,
-      icon: "flaticon-abs",
-      title: "100% Fat Blasting",
-      desc: (<>A thing added to something else in order to complete or enhance it.</>)
+      icon: <TbMoodHappy />,
+      title: "Farkındalıklı bir hayata hazır ol",
+      desc: (<>Bundan sonra hayatın eskisi gibi olmayacak, daha sağlık, daha enerjili, daha mutlu ...</>)
    },
 ]
 
@@ -53,7 +58,7 @@ const    HomeOneFeature = ({style}:any) => {
                            <div key={item.id} className="col-md-6 col-sm-8">
                               <div className="features-item">
                                  <div className="features-icon">
-                                    <i className={item.icon}></i>
+                                   {item.icon}
                                  </div>
                                  <div className="features-content">
                                     <h4 className="title">{item.title}</h4>
