@@ -20,6 +20,17 @@ const index = () => {
     <Wrapper>
       <HomeOne />
       <GoogleAnalytics gaId="G-B4D9S6KV6K" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            gtag('event', 'conversion', {
+              'send_to': 'AW-691907577/bwLvCMXFlcYZEPnX9skC',
+              'value': 1.0,
+              'currency': 'TRY'
+            });
+          `
+        }}
+      />
     </Wrapper>
   )
 }
