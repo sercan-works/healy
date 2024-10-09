@@ -40,7 +40,7 @@ const features_product_data: DataType[] = [
         , Uyku, Üçün Gücü, Deep Cycle, Öğrenme, Cilt.
       </>
     ),
-    new_price: 27.335,
+    new_price: 27.355,
     old_price: 54.709
   },
   {
@@ -57,14 +57,14 @@ const features_product_data: DataType[] = [
         , Uyku, Üçün Gücü, Deep Cycle, Öğrenme, Cilt.
       </>
     ),
-    new_price: 46.662,
+    new_price: 45.663,
     old_price: 91.325
   },
   {
     id: 3,
     thumb: featureThumb_1,
     thumb_shape: featureThumbShape_3,
-    title: "Healy Pro",
+    title: "Healy Profesyonel",
     quantity: "",
     desc: (
       <>
@@ -77,7 +77,7 @@ const features_product_data: DataType[] = [
       </>
     ),
     new_price: 72.995,
-    old_price: 145.990
+    old_price: 145.989
   }
 ];
 
