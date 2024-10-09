@@ -3,6 +3,7 @@ import '../styles/index.css'
 import { Roboto, Oswald } from 'next/font/google'
 import { Provider } from "react-redux";
 import store from "@/redux/store";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const body = Roboto({
   weight: ['100','300','400', '500', '700', '900'],
@@ -32,6 +33,7 @@ export default function RootLayout({
           {children}
         </Provider>
       </body>
+      <GoogleAnalytics gaId="G-B4D9S6KV6K" />
     </html>
   )
 }

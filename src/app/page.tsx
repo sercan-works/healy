@@ -1,5 +1,6 @@
 import HomeOne from "@/components/homes/home";
 import Wrapper from "@/layout/Wrapper";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: "Healy - Healy Frekans Cihazları",
@@ -18,6 +19,7 @@ const index = () => {
   return (
     <Wrapper>
       <HomeOne />
+      <GoogleAnalytics gaId="G-B4D9S6KV6K" />
     </Wrapper>
   )
 }
