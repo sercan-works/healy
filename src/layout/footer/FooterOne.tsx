@@ -84,7 +84,7 @@ const FooterOne = ({style}:any) => {
                            <h4 className="fw-title">CONTACT US</h4>
                            <div className="footer-contact-wrap">
                               <ul className="list-wrap">
-                                 <li className="phone"><i className="fas fa-phone"></i> +90 555 555 55 55</li>
+                                 <li className="phone"><i className="fas fa-phone"></i> +90 545 446 77 21</li>
                                  <li className="mail"><i className="fas fa-envelope"></i> herseyfrekans@gmail.com</li>
                                  <li className="website"><i className="fas fa-globe"></i> www.herseyfrekans.com</li>
                               </ul>
