@@ -24,7 +24,7 @@ const index = () => {
         dangerouslySetInnerHTML={{
           __html: `
             gtag('event', 'conversion', {
-              'send_to': 'AW-691907577/bwLvCMXFlcYZEPnX9skC',
+              'send_to': 'AW-16735842805/FYSoCK7g9tsZEPXjoqw-',
               'value': 1.0,
               'currency': 'TRY'
             });
