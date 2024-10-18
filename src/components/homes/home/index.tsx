@@ -15,7 +15,6 @@ import HomeOneFactArea from "./HomeOneFactArea"
 import HomeOneShop from "./HomeOneShop"
 import WhatsAppButton from "@/components/common/WhatsAppButton"
 import { useEffect } from "react"
-import { scrapeHealyProducts } from "../../../../actions/scrape-products"
 
 const HomeOne = () => {
 //   const fetchProduct = async () => {
