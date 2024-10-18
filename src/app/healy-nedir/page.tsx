@@ -2,7 +2,7 @@ import Feature from "@/components/inner-page/feature";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Feature Suxnix - Health Supplement React Next js Template",
+   title: "Healy Nedir? - Herşey Frekans",
 };
 const index = () => {
    return (

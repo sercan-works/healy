@@ -9,6 +9,7 @@ import { Rating } from "react-simple-star-rating"
 import InputRange from '@/ui/InputRange';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { selectProducts } from '@/redux/features/productSlice';
+import { getProducts } from '@/utils/db';
 
 const ShopArea = () => {
 
@@ -183,6 +184,19 @@ const ShopArea = () => {
             break;
       }
    };
+
+   useEffect(() => {
+      async function fetchProducts() {
+         try {
+            const productsData = await getProducts();
+            setProducts(productsData);
+         } catch (error) {
+            console.error('Error fetching products:', error);
+         }
+      }
+
+      fetchProducts();
+   }, []);
 
    return (
       <div className="inner-shop-area">
