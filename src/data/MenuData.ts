@@ -30,21 +30,21 @@ const menu_data: MenuItem[] = [
       page: "header_1",
       has_dropdown: false,
       title: "Healy Nedir?",
-      link: "/feature",
+      link: "/healy-nedir",
    },
    {
       id: 3,
       page: "header_1",
       has_dropdown: false,
       title: "Cihazlarımız",
-      link: "/paroller",
+      link: "/healy-cihazlar",
    },
    {
       id: 4,
       page: "header_1",
       has_dropdown: false,
       title: "Healy Programları",
-      link: "/ingredient",
+      link: "/healy-programlar",
    },
    // {
    //    id: 5,
@@ -70,23 +70,30 @@ const menu_data: MenuItem[] = [
    //       { link: "/not-found", title: "404" },
    //    ],
    // },
+   // {
+   //    id: 7,
+   //    page: "header_1",
+   //    has_dropdown: true,
+   //    title: "Blog",
+   //    link: "/blog",
+   //    // sub_menus: [
+   //    //    { link: "/blog", title: "Our Blog" },
+   //    //    { link: "/blog-details", title: "Blog-Details", },
+   //    // ],
+   // },
    {
-      id: 7,
+      id: 5,
       page: "header_1",
-      has_dropdown: true,
-      title: "Blog",
-      link: "/blog",
-      // sub_menus: [
-      //    { link: "/blog", title: "Our Blog" },
-      //    { link: "/blog-details", title: "Blog-Details", },
-      // ],
+      has_dropdown: false,
+      title: "Ücretsiz Analiz",
+      link: "/analiz",
    },
    {
       id: 8,
       page: "header_1",
       has_dropdown: false,
       title: "İletişim",
-      link: "/contact",
+      link: "/iletisim",
    },
 
    // for header Two
@@ -121,7 +128,7 @@ const menu_data: MenuItem[] = [
       page: "header_2",
       has_dropdown: false,
       title: "Feature",
-      link: "/feature",
+      link: "/healy-nedir",
    },
    {
       id: 5,
@@ -156,7 +163,7 @@ const menu_data: MenuItem[] = [
       page: "header_2",
       has_dropdown: false,
       title: "Contact",
-      link: "/contact",
+      link: "/iletisim",
    },
 ];
 export default menu_data;

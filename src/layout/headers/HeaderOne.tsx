@@ -15,6 +15,7 @@ import logo_2 from "@/assets/img/logo/white_logo.png";
 import { GiLightningFrequency } from "react-icons/gi";
 import React from 'react';
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { FaCanadianMapleLeaf } from "react-icons/fa6";
 
 const HeaderOne = ({ style }: { style: any}) => {
     const { sticky } = UseSticky();
@@ -26,6 +27,13 @@ const HeaderOne = ({ style }: { style: any}) => {
 
     return (
         <>
+            {/* DUYURU */}
+            <div className="w-full bg-gradient-to-tr from-pink-400 to-gray-100 text-white p-2">
+                <p className="text-center text-white font-bold flex flex-row items-center justify-center gap-2 ">
+                <FaCanadianMapleLeaf className="text-yellow-300" /> EKİM AYINA ÖZEL <span className="text-yellow-300">%50 İNDİRİM</span> FIRSATLARINI KAÇIRMAYIN<FaCanadianMapleLeaf className="text-yellow-300" />
+                </p>
+            </div>
+
             <header id="home">
                 <div id="sticky-header" className={`menu-area ${style ? "transparent-header" : ""} ${sticky ? "sticky-menu" : ""}`}>
                     <div className="container custom-container">

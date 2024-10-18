@@ -1,0 +1,8 @@
+<!-- Event snippet for Sayfa görüntüleme conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16735842805/FYSoCK7g9tsZEPXjoqw-',
+      'value': 1.0,
+      'currency': 'TRY'
+  });
+</script>

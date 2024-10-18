@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -14,7 +15,9 @@
     "@next/third-parties": "^14.2.15",
     "@reduxjs/toolkit": "^1.9.7",
     "bootstrap": "^5.3.2",
+    "firebase": "^10.14.0",
     "next": "^14.0.2",
+    "puppeteer": "^23.5.2",
     "react": "^18.2.0",
     "react-18-image-lightbox": "^5.1.4",
     "react-circular-progressbar": "^2.1.0",
