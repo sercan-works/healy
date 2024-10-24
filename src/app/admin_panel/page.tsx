@@ -1,13 +1,14 @@
-import Blog from "@/components/blogs/blog";
 import Wrapper from "@/layout/Wrapper";
+import ProductAdd from "./ProductAdd";
+import ProductsPanel from "./ProductsPanel";
 
 export const metadata = {
-  title: "Blog - Healy",
+  title: "Admin Paneli",
 };
 const index = () => {
   return (
     <Wrapper>
-      <Blog />
+        <ProductsPanel/>
     </Wrapper>
   )
 }

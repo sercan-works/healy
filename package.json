@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@hookform/resolvers": "^3.3.2",
+    "@mui/material": "^6.1.5",
     "@next/third-parties": "^14.2.15",
     "@reduxjs/toolkit": "^1.9.7",
     "@vercel/postgres": "^0.10.0",
