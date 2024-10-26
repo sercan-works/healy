@@ -9,8 +9,9 @@ import Image, { StaticImageData } from 'next/image';
 import ReviewForm from '@/components/forms/ReviewForm';
 import HomeOneShop from '@/components/homes/home/HomeOneShop';
 
-import reviewImg_1 from "@/assets/img/products/home_shop_thumb01.png"
-
+import reviewImg_1 from '@/assets/img/others/p_review_img01.jpg';
+import reviewImg_2 from '@/assets/img/others/p_review_img02.jpg';
+import reviewImg_3 from '@/assets/img/others/p_review_img03.jpg';
 
 const tab_title: string[] = ["Description", "Additional information", "Reviews (03)",];
 
@@ -33,10 +34,10 @@ interface singProduct {
 }
 
 const product_content: singProduct = {
-   title_1: "Healy Rezonans Plus",
-   title_2: "The true strength of Healy :",
-   title_3: "Healy the basics :",
-   desc_1: (<>The Healy is a small but very versatile device (controlled by your Apple or Android smartphone) that uses Individualized Microcurrent Frequency (IMF) programs to harmonize your Bioenergetic Field for many important areas of life.</>),
+   title_1: "Suxnix Natural Vitamin Supplement",
+   title_2: "The true strength of Suxnix :",
+   title_3: "Suxnix the basics :",
+   desc_1: (<>Suxnix food is food produced by methods complying with the standards of Rrganic farming. Standards vary Lorem ipsum dolor sit amet, consectetur adipiscing worldwide, but organic farming.</>),
    desc_2: (<>Whey Protein Isolates (WPIs) are the purest form of whey protein that currently exists. WPIs are costly to use, but rate among the best proteins that money can buy. That’s why they’re the first ingredient you read on the Gold Standard 100% Whey™ label. By using WPI as the primary ingredient along with premium ultra-filtered whey protein concentrate (WPC), we’re able to pack 24 grams of protein into every serving to support your muscle building needs after training. ON’attention to detail also extends to mixability. This superior quality powder has been instantized to mix easliy using a shaker cup or just a glass and spoon. There’s no doubt that this is the standard by which all other whey proteins are measured.</>),
    list: ["82% Protein by Weight (24g of Protein Per 31.5g Serving Size).", "Whey Protein Isolates (WPI) Main Ingredient.", "Whey Protein Micro-functions from Whey Protein Isolate and Ultra-Filtered Whey Protein Concentrate.", "Over 4g of Naturally Occurring Glutamine & Glutamic Acid in Each Serving.",
       "More than 5g of the Naturally Occurring Branched Chain Amino Acids (BCAAs) Leucine, Isoleucine, and Valine in Each Serving.", "The “Gold Standard” for Protein Quality.", "Banned Substance Tested Protein", "French Vanilla Creme Flavored Whey Protein Powder"
@@ -44,8 +45,8 @@ const product_content: singProduct = {
    table_row: [{ title: "Calories", count: "110" }, { title: "Total Fat", count: "1kg" }, { title: "Saturated Fat", count: "0.5kg" }, { title: "Cholesterol", count: "40mg" }, { title: "Total Carbohydrate", count: "2g" }, { title: "Protein", count: "24g" }, { title: "Total Sugars", count: "2g" }, { title: "Sodium", count: "100mg" }, { title: "Calcium", count: "140 mg" }, { title: "Potassium", count: "160 mg" },],
    review_data: [
       { img: reviewImg_1, meta: (<>Chenai Simon <span>-May 12, 2023</span></>), desc: (<>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</>) },
-      { img: reviewImg_1, meta: (<>Finn Castaneda <span>-June 15, 2023</span></>), desc: (<>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</>) },
-      { img: reviewImg_1, meta: (<>Bayley Robertson <span>-July 18, 2023</span></>), desc: (<>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</>) },
+      { img: reviewImg_2, meta: (<>Finn Castaneda <span>-June 15, 2023</span></>), desc: (<>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</>) },
+      { img: reviewImg_3, meta: (<>Bayley Robertson <span>-July 18, 2023</span></>), desc: (<>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of lorem ipsum.</>) },
    ]
 }
 
@@ -84,7 +85,7 @@ const ShopDetailsArea = ({ single_product }: any) => {
                         <h4 className="title">{single_product?.title ? single_product.title : title_1}</h4>
                         <div className="inner-shop-details-meta">
                            <ul className="list-wrap">
-                              <li>Brands : <Link href="/shop">Healy</Link></li>
+                              <li>Brands : <Link href="/shop">Suxnix</Link></li>
                               <li className="inner-shop-details-review">
                                  <div className="rating">
                                     <Rating initialValue={single_product?.rating ? single_product.rating : 5} size={20} readonly={true} />

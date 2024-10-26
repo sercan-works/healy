@@ -92,9 +92,9 @@ const ProductDetails = () => {
   const handleSave = async () => {
     try {
       // Güncelleme sorgusu
-      await sql`
-        UPDATE products SET name = ${selectedProduct?.name}, description = ${selectedProduct?.description}, price = ${selectedProduct?.price}, created_at = ${selectedProduct?.created_at}, tag = ${selectedProduct?.tag}, discount = ${selectedProduct?.discount}, link = ${selectedProduct?.link}, old_price = ${selectedProduct?.old_price}, slug = ${selectedProduct?.slug} WHERE id = ${selectedProduct?.id}
-      `;
+      // await sql`
+      //   UPDATE products SET name = ${selectedProduct?.name}, description = ${selectedProduct?.description}, price = ${selectedProduct?.price}, created_at = ${selectedProduct?.created_at}, tag = ${selectedProduct?.tag}, discount = ${selectedProduct?.discount}, link = ${selectedProduct?.link}, old_price = ${selectedProduct?.old_price}, slug = ${selectedProduct?.slug} WHERE id = ${selectedProduct?.id}
+      // `;
 
       // Güncelleme başarılı ise, ürün listesini güncelleyebilirsiniz
       // Örneğin, ürünleri yeniden yükleyebilir veya mevcut listeyi güncelleyebilirsiniz
@@ -267,7 +267,7 @@ const ProductDetails = () => {
       </Table>
     </TableContainer>
     {/* Dialog for editing product */}
-    <Dialog open={openDialog} onClose={handleClose}>
+    {/* <Dialog open={openDialog} onClose={handleClose}>
       <DialogTitle>Ürünü Düzenle</DialogTitle>
       <DialogContent>
         <TextField
@@ -348,7 +348,7 @@ const ProductDetails = () => {
         <Button onClick={handleClose} color="primary">İptal</Button>
         <Button onClick={handleSave} color="primary">Kaydet</Button>
       </DialogActions>
-    </Dialog>
+    </Dialog> */}
     </>
   );
 };
