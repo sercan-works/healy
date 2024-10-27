@@ -111,7 +111,7 @@ const HomeOnefeatureProduct = ({ style }: any) => {
                   <h6 className="features-product-quantity">{item.quantity}</h6>
                   <p>{item.desc}</p>
                   <div className="features-product-bottom">
-                    <Link href="https://turkiye.healy.shop/?partnername=0136-1592-2551" target="_blank" className="eg-btn">
+                    <Link href={`/shop-details/${item.id}`} target="_blank" className="eg-btn">
                       Satın Al
                     </Link>
                     <span className="price">

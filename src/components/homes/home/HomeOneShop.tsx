@@ -92,7 +92,7 @@ const HomeOneShop = ({ style, inner_style }: any) => {
                         <div className="home-shop-item">
                            <div className="home-shop-thumb">
                               <Link href={`/shop-details/${item.id}`}>
-                                 <Image src={item.thumb} alt="img" />
+                                 <Image src={(item.images_link && item.images_link[0]?.src) || item.thumb} alt={(item.images_link && item.images_link[0]?.alt) || "img"} />
                                  {item.discount ? <span className="discount"> -{item.discount}%</span> : ""}
                               </Link>
                               <div className={`shop-thumb-shape ${item.class_name}`}></div>
@@ -100,14 +100,14 @@ const HomeOneShop = ({ style, inner_style }: any) => {
                            <div className="home-shop-content">
                               <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
                               <span className="home-shop-price">{item.price}₺</span>
-                              <div className="home-shop-rating">
+                              {/* <div className="home-shop-rating">
                                  <Rating initialValue={item.rating} size={20} readonly={true} />
                                  <span className="total-rating">({item.total_rating})</span>
-                              </div>
+                              </div> */}
                               <div className="shop-content-bottom">
                                  {/* <a style={{cursor:"pointer"}} onClick={() => handleAddToCart(item)} className="cart"><i className="flaticon-shopping-cart-1"></i></a> */}
                                  {/* <Link href={`/shop-details/${item.id}`} className="eg-btn btn-two flex mx-auto">Satın Al</Link> */}
-                                 <Link href={`https://turkiye.healy.shop/?partnername=0136-1592-2551`} target="_blank" className="eg-btn btn-two flex mx-auto">Satın Al</Link>
+                                 <Link href={`/shop-details/${item.id}`} target="_blank" className=" flex mx-auto text-white fpont-bold bg-rose-500 py-2 px-5 rounded-xl">İncele</Link>
                               </div>
                            </div>
                         </div>
