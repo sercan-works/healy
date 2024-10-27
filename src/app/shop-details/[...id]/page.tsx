@@ -6,7 +6,7 @@ import FooterOne from "@/layout/footer/FooterOne";
 import HeaderOne from "@/layout/headers/HeaderOne";
 
 export const metadata = {
-  title: "Shop Details Suxnix - Health Supplement React Next js Template",
+  title: "Healy - Herşey Frekans",
 };
 const index = ({ params }: { params: { id: number } }) => {
 
@@ -17,7 +17,7 @@ const index = ({ params }: { params: { id: number } }) => {
     <Wrapper>
       <HeaderOne style={true} />
       <main className="main-area fix">
-        <Breadcrumb title="Shop Details" />
+        <Breadcrumb title="Detay" />
         <ShopDetailsArea single_product={single_product} key={single_product?.id} />
       </main>
       <FooterOne style={false} />

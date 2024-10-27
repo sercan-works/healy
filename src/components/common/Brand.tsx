@@ -5,6 +5,7 @@ import Slider from "react-slick";
 
 import brandImg_1 from "@/assets/img/brand/brand_01.png"
 import brandImg_2 from "@/assets/img/brand/brand_02.png"
+import brandImg_3 from "@/assets/img/brand/brand_03.png"
 
 
 const brandData: StaticImageData[] = [brandImg_1, brandImg_2,]
@@ -77,6 +78,7 @@ const Brand = ({ style }: any) => {
             <div className="flex flex-col md:flex-row justify-around gap-2 mx-5">
                <Image className="w-[50vh] rounded-lg ring-2 ring-secondary shadow-lg" src={brandImg_1} alt="healy taksit" />
                <Image className="w-[50vh] rounded-lg ring-2 ring-secondary shadow-lg" src={brandImg_2} alt="healy iade" />
+               <Image className="w-[50vh] rounded-lg ring-2 ring-secondary shadow-lg" src={brandImg_3} alt="healy partner" />
             </div>
          </div>
       </section>

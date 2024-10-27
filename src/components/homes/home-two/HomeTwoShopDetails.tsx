@@ -66,7 +66,6 @@ const HomeTwoShopDetails = () => {
                </div>
             </div>
             <div className="row">
-               <ShopDetailsTab />
                
                <div className="col-lg-6">
                   <div className="inner-shop-details-content">

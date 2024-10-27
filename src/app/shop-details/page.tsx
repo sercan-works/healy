@@ -2,7 +2,7 @@ import ShopDetails from "@/components/inner-shop/shop-details";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-  title: "Shop Details Suxnix - Health Supplement React Next js Template",
+  title: "Healy - Herşey Frekans",
 };
 const index = () => {
   return (

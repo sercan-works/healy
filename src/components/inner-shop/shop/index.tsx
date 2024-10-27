@@ -8,7 +8,7 @@ const Shop = () => {
       <>
          <HeaderOne style={true} />
          <main className="main-area fix">
-            <Breadcrumb title="Our Shop" />
+            <Breadcrumb title="Healy Shop" />
             <ShopArea />
          </main>
          <FooterOne style={false} />

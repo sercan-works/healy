@@ -191,7 +191,7 @@ const ShopArea = () => {
                <div className="col-xl-3 col-lg-4 col-md-8 col-sm-8">
                   <aside className="shop-sidebar">
                      <div className="widget">
-                        <h4 className="sidebar-title">Filter by Price</h4>
+                        <h4 className="sidebar-title">Fiyata göre filtrele</h4>
                         <div className="price_filter">
                            <div id="slider-range mb-20">
                               <InputRange
@@ -203,14 +203,14 @@ const ShopArea = () => {
                               />
                            </div>
                            <div className="price_slider_amount">
-                              <span onChange={() => handleChanges}>Price : ${priceValue[0]} - ${priceValue[1]}</span>
-                              <input type="submit" className="eg-btn" value="Filter" />
+                              <span onChange={() => handleChanges}>Fiyat : {priceValue[0]}₺ - {priceValue[1]}₺</span>
+                              <input type="submit" className="eg-btn" value="Filtrele" />
                            </div>
                         </div>
                      </div>
 
                      <div className="widget">
-                        <h4 className="sidebar-title">CATEGORIES</h4>
+                        <h4 className="sidebar-title">Kategoriler</h4>
                         <ul className="categories-list list-wrap">
                            {allCategory.map((cate_item: any, i: any) =>
                               <li key={i}>
@@ -223,7 +223,7 @@ const ShopArea = () => {
                         </ul>
                      </div>
 
-                     <div className="widget">
+                     {/* <div className="widget">
                         <h4 className="sidebar-title">LATEST PRODUCTS</h4>
                         <div className="lp-post-list">
                            <ul className="lp-post-item list-wrap">
@@ -245,10 +245,10 @@ const ShopArea = () => {
                               )}
                            </ul>
                         </div>
-                     </div>
+                     </div> */}
 
                      <div className="widget">
-                        <h4 className="sidebar-title">Product tags</h4>
+                        <h4 className="sidebar-title">Tag</h4>
                         <ul className="Product-tag-list list-wrap">
                            {allTags.map((tag_item, index) =>
                               <li key={index}><a style={{ cursor: "pointer" }} onClick={() => handleTags(tag_item)}>{tag_item}</a></li>
@@ -263,19 +263,19 @@ const ShopArea = () => {
                      <div className="row">
                         <div className="col-md-6">
                            <div className="shop-top-left">
-                              <p className="woocommerce-result-count shop-show-result">Showing 1-6 of 18 results</p>
+                              <p className="woocommerce-result-count shop-show-result">{currentItems.length} adet Healy ürünü bulundu.</p>
                            </div>
                         </div>
                         <div className="col-md-6">
                            <div className="shop-top-right selection">
                               <form className="woocommerce-ordering mb-0" onSubmit={(e) => e.preventDefault()}>
                                  <select onChange={selectHandler} className="orderby form-select">
-                                    <option value="default">Sort by popular</option>
-                                    <option value="02">Sort by view</option>
-                                    <option value="03">Sort by price</option>
-                                    <option value="04">Sort by ratings</option>
-                                    <option value="05">Sort by new</option>
-                                    <option value="06">Sort by discount</option>
+                                    <option value="default">Popüler</option>
+                                    <option value="02">Görüntülenme</option>
+                                    <option value="03">Fiyata göre</option>
+                                    <option value="04">Puanlara göre</option>
+                                    <option value="05">Yeni</option>
+                                    <option value="06">İndirimli</option>
                                  </select>
                               </form>
                            </div>
@@ -290,7 +290,7 @@ const ShopArea = () => {
                               <div className="home-shop-item inner-shop-item">
                                  <div className="home-shop-thumb">
                                     <Link href={`/shop-details/${item.id}`}>
-                                       <Image src={item.thumb} alt="img" />
+                                       <Image  layout="fill" src={item.images_link[0].src || item.thumb} alt={item.images_link[0].alt || "img"} />
                                        {item.discount ? <span className="discount"> -{item.discount}%</span> : ""}
                                        {item.new ? <span className="discount new">{item.new}</span> : ""}
                                     </Link>
@@ -298,14 +298,10 @@ const ShopArea = () => {
                                  <div className="home-shop-content">
                                     <div className="shop-item-cat"><Link href="#">{item.tag}</Link></div>
                                     <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
-                                    <span className="home-shop-price">${item.price}</span>
-                                    <div className="home-shop-rating">
-                                       <Rating initialValue={item.rating} size={20} readonly={true} />
-                                       <span className="total-rating">({item.total_rating})</span>
-                                    </div>
+                                    <span className="home-shop-price">{item.price}₺</span>
+                                   
                                     <div className="shop-content-bottom">
-                                       <a style={{ cursor: "pointer" }} onClick={() => handleAddToCart(item)} className="cart"><i className="flaticon-shopping-cart-1"></i></a>
-                                       <Link href="/cart" className="eg-btn btn-two">Buy Now</Link>
+                                       <Link href={`/shop-details/${item.id}`} className="bg-teal-500 text-white px-4 py-2 rounded-md mx-auto hover:bg-teal-600 transition-all duration-300">Detaylı İncele</Link>
                                     </div>
                                  </div>
                               </div>

@@ -18,8 +18,13 @@ const product_nav_img: productNavImg = [product_nav_1, product_nav_1, product_na
 
 const product_nav_img_2: productNavImg = [product_nav_1, product_nav_1, product_nav_1, product_nav_1]
 
-const ShopDetailsTab = () => {
+// Define a new type for the images
+type ImageType = {
+   src: string;
+   alt: string;
+};
 
+const ShopDetailsTab = ({ images }: { images: ImageType[] }) => { // Specify the type for images
    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
    return (
@@ -27,23 +32,21 @@ const ShopDetailsTab = () => {
          <div className="inner-shop-details-flex-wrap">
             <div className="inner-shop-details-img-wrap">
                <div className="tab-content" id="myTabContent">
-                  {product_nav_img.map((img, index) => (
-                     <div key={index} className={`tab-pane fade ${index === currentImageIndex ? 'show active' : ''}`} id={`item${index}`}>
-                        <div className="inner-shop-details-img">
-                           <Image src={img} alt="bemet" />
-                        </div>
+                  <div className="tab-pane fade show active" id="item0">
+                     <div className="inner-shop-details-img">
+                        <Image src={images[currentImageIndex]?.src || product_nav_img[0].src} layout="responsive" objectFit="cover" width={400} height={200} alt={images[currentImageIndex]?.alt || 'Herşey Frekans'} />
                      </div>
-                  ))}
+                  </div>
                </div>
             </div>
 
             <div className="inner-shop-details-nav-wrap">
                <ul className="nav nav-tabs" id="myTab" role="tablist">
-                  {product_nav_img_2.map((img, index) => (
+                  {images?.map((img, index) => (
                      <li key={index} className="nav-item">
                         <button onClick={() => setCurrentImageIndex(index)}
                            className={`nav-link ${index === currentImageIndex ? 'active' : ''}`}>
-                           <Image src={img} alt="Gainioz" />
+                           <Image src={img.src} layout="responsive" objectFit="cover" width={100} height={100} alt={img.alt} />
                         </button>
                      </li>
                   ))}
