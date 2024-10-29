@@ -6,7 +6,7 @@ import FooterOne from "@/layout/footer/FooterOne"
 import HeaderOne from "@/layout/headers/HeaderOne"
 
 export const metadata = {
-   title: "Blog Details Suxnix - Health Supplement React Next js Template",
+   title: "Blog Details Herşey Frekans",
 };
 
 const index = ({ params }: { params: { id: number } }) => {
