@@ -11,12 +11,12 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                <div className="offCanvas-toggle" onClick={() => setOffCanvas(false)}><Image src={logo_1} alt="icon" /></div>
                <div className="offCanvas-body">
                   <div className="offCanvas-content">
-                     <h3 className="title">Hayatınız İçin <span>Frekanslar</span></h3>
+                     <h1 className="title">Hayatınız İçin <span>Frekanslar</span></h1>
                      <p>Bütünsel Sağlık, beden, zihin ve ruhun birlik ve uyum duygusudur, kapsayıcı bir refah ve canlılık deneyimlemektir. Yaşama tam kapasitenizle katılmanızı sağlar.</p>
                   </div>
                   <div className="offcanvas-contact">
-                     <h4 className="number">+90 545 446 77 21</h4>
-                     <h4 className="email">herseyfrekans@gmail.com</h4>
+                     <h1 className="number">+90 545 446 77 21</h1>
+                     <h1 className="email">herseyfrekans@gmail.com</h1>
                      <p> Türkiye</p>
                      <ul className="offcanvas-social list-wrap">
                         <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>

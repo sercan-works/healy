@@ -32,7 +32,7 @@ const ForgotForm = () => {
                <div className="col-xl-6 col-lg-8">
                   <div className="eg-login__wrapper">
                      <div className="eg-login__top text-center mb-30">
-                        <h3 className="eg-login__title">Forgot Password</h3>
+                        <h1 className="eg-login__title">Forgot Password</h1>
                         <p>Enter your email address to request password reset.</p>
                      </div>
                      <form onSubmit={handleSubmit(onSubmit)}>

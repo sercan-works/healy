@@ -44,7 +44,7 @@ const HomeTwoFeature = () => {
                               <i className={item.icon}></i>
                            </div>
                            <div className="tg-features-content">
-                              <h4 className="title">{item.title}</h4>
+                              <h1 className="title">{item.title}</h1>
                               <p>{item.desc}</p>
                               <Link href="/contact">Learn more</Link>
                            </div>

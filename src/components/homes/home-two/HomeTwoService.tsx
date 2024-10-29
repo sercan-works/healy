@@ -60,7 +60,7 @@ const HomeTwoService = ({ style, style_2 }: any) => {
                   <div className="col-lg-8">
                      <div className="tg-section-title text-center mb-60">
                         <span className="sub-title">Healy Nedir ?</span>
-                        <h2 className="title">GENEL ÖZELLİKLER</h2>
+                        <h1 className="title">GENEL ÖZELLİKLER</h1>
                      </div>
                   </div>
                </div>
@@ -74,7 +74,7 @@ const HomeTwoService = ({ style, style_2 }: any) => {
                               {/* <i className={item.icon}></i> */}
                               {item.icon}
                            </div>
-                           <h2 className="title"><Link href="contact.html">{item.title}</Link></h2>
+                           <h1 className="title"><Link href="contact.html">{item.title}</Link></h1>
                            <div className="tg-service-content">
                               <p>{item.desc}</p>
                               <Link href="/contact"><i className="fas fa-plus"></i>Daha Fazla Bilgi</Link>

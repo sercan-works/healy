@@ -40,7 +40,7 @@ const HomeOneFactArea = ({style}:any) => {
                               <span className="percentage"><CircleProgress finish={item.percentage} /></span>
                            </div>
                            <div className="fact-content">
-                              <h4 className="title">{item.title}</h4>
+                              <h1 className="title">{item.title}</h1>
                               <span>{item.desc}</span>
                            </div>
                         </div>

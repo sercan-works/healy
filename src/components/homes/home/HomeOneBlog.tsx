@@ -14,7 +14,7 @@ const HomeOneBlog = () => {
                      <div className="blog-posts-wrapper">
                         <div className="section-title mb-50">
                            <p className="sub-title">.. HEALY BLOG ..</p>
-                           <h2 className="title">Son Yazılar</h2>
+                           <h1 className="title">Son Yazılar</h1>
                         </div>
                         
                         {blog_data.filter((item) => item.page === "home_1").map((item) => (
@@ -27,7 +27,7 @@ const HomeOneBlog = () => {
                                     <div className="tags"><Link href="#">{item.tag}</Link></div>
                                     <span className="date"><i className="far fa-clock"></i>{item.date}</span>
                                  </div>
-                                 <h3 className="title"><Link href="/blog-details">{item.title}</Link></h3>
+                                 <h1 className="title"><Link href="/blog-details">{item.title}</Link></h1>
                                  <div className="content-bottom">
                                     <ul className="list-wrap">
                                        <li className="user">Post By - <Link href="#">Admin</Link></li>
@@ -45,7 +45,7 @@ const HomeOneBlog = () => {
                      <div className="faq-wrapper">
                         <div className="section-title mb-50">
                            <p className="sub-title">.. Ask Question ..</p>
-                           <h2 className="title">Get Every Answers</h2>
+                           <h1 className="title">Get Every Answers</h1>
                         </div>
                         <FAQ/>
                      </div>

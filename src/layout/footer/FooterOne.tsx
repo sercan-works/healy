@@ -69,7 +69,7 @@ const FooterOne = ({style}:any) => {
                      {footer_data.map((item) => (
                         <div key={item.id} className={` ${item.class_name} col-md-5 col-sm-6`}>
                            <div className="footer-widget">
-                              <h4 className="fw-title">{item.title}</h4>
+                              <h1 className="fw-title">{item.title}</h1>
                               <ul className="list-wrap">
                                  {item.footer_link.map((li, i) => (
                                     <li key={i}><Link href={li.link}>{li.link_title}</Link></li>
@@ -81,7 +81,7 @@ const FooterOne = ({style}:any) => {
 
                      <div className="col-lg-3 col-md-5">
                         <div className="footer-widget">
-                           <h4 className="fw-title">CONTACT US</h4>
+                           <h1 className="fw-title">CONTACT US</h1>
                            <div className="footer-contact-wrap">
                               <ul className="list-wrap">
                                  <li className="phone"><i className="fas fa-phone"></i> +90 545 446 77 21</li>

@@ -191,7 +191,7 @@ const ShopArea = () => {
                <div className="col-xl-3 col-lg-4 col-md-8 col-sm-8">
                   <aside className="shop-sidebar">
                      <div className="widget">
-                        <h4 className="sidebar-title">Fiyata göre filtrele</h4>
+                        <h1 className="sidebar-title">Fiyata göre filtrele</h1>
                         <div className="price_filter">
                            <div id="slider-range mb-20">
                               <InputRange
@@ -210,7 +210,7 @@ const ShopArea = () => {
                      </div>
 
                      <div className="widget">
-                        <h4 className="sidebar-title">Kategoriler</h4>
+                        <h1 className="sidebar-title">Kategoriler</h1>
                         <ul className="categories-list list-wrap">
                            {allCategory.map((cate_item: any, i: any) =>
                               <li key={i}>
@@ -224,7 +224,7 @@ const ShopArea = () => {
                      </div>
 
                      {/* <div className="widget">
-                        <h4 className="sidebar-title">LATEST PRODUCTS</h4>
+                        <h1 className="sidebar-title">LATEST PRODUCTS</h1>
                         <div className="lp-post-list">
                            <ul className="lp-post-item list-wrap">
                               {currentItems.slice(0, 3).map((item, index) =>
@@ -238,7 +238,7 @@ const ShopArea = () => {
                                              <Rating initialValue={item.rating} size={20} readonly={true} />
                                           </li>
                                        </ul>
-                                       <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
+                                       <h1 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h1>
                                        <span className="price">${item.price}</span>
                                     </div>
                                  </li>
@@ -248,7 +248,7 @@ const ShopArea = () => {
                      </div> */}
 
                      <div className="widget">
-                        <h4 className="sidebar-title">Tag</h4>
+                        <h1 className="sidebar-title">Tag</h1>
                         <ul className="Product-tag-list list-wrap">
                            {allTags.map((tag_item, index) =>
                               <li key={index}><a style={{ cursor: "pointer" }} onClick={() => handleTags(tag_item)}>{tag_item}</a></li>
@@ -297,7 +297,7 @@ const ShopArea = () => {
                                  </div>
                                  <div className="home-shop-content">
                                     <div className="shop-item-cat"><Link href="#">{item.tag}</Link></div>
-                                    <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
+                                    <h1 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h1>
                                     <span className="home-shop-price">{item.price}₺</span>
                                    
                                     <div className="shop-content-bottom">

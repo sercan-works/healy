@@ -32,7 +32,7 @@ const HeaderCart = ({ cartOpen, setCartOpen }: any) => {
                            <Image src={item.thumb} width={70} height={70} alt="" />
                         </div>
                         <div className="mini-cart-content">
-                           <h4 className="product-title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
+                           <h1 className="product-title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h1>
                            <div className="mini-cart-price">{item.quantity} ×
                               <span className="woocommerce-Price-amount amount">{item.price}₺</span>
                            </div>

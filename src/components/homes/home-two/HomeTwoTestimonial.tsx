@@ -9,7 +9,7 @@ const HomeTwoTestimonial = () => {
                <div className="col-lg-8">
                   <div className="tg-section-title white text-center mb-60">
                      <span className="sub-title">recommend doctors</span>
-                     <h2 className="title white-text">recommended by doctors</h2>
+                     <h1 className="title white-text">recommended by doctors</h1>
                   </div>
                </div>
             </div>
@@ -26,7 +26,7 @@ const HomeTwoTestimonial = () => {
                                  <div className="rating">
                                     {item.rating.map((rating, i) => (<i key={i} className={rating}></i>))}
                                  </div>
-                                 <h2 className="title">{item.title}</h2>
+                                 <h1 className="title">{item.title}</h1>
                                  <p>{item.desc}</p>
                                  <p className="tg-testi-avatar-info">{item.avatar_name} <span>2 hours ago</span></p>
                               </div>

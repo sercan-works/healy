@@ -85,7 +85,7 @@ const HomeOneTestimonial = () => {
                                  <Image src={item.avatar} alt="img" />
                               </div>
                               <div className="testi-avatar-info">
-                                 <h5 className="name">{item.avatar_name}</h5>
+                                 <h1 className="name">{item.avatar_name}</h1>
                               </div>
                            </div>
                         </div>

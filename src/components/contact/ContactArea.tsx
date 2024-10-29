@@ -45,7 +45,7 @@ const ContactArea = () => {
                               {item.icon}
                            </div>
                            <div className="contact-content">
-                              <h5 className="title">{item.title}</h5>
+                              <h1 className="title">{item.title}</h1>
                               <p className="contact-desc">{item.info}</p>
                            </div>
                         </div>

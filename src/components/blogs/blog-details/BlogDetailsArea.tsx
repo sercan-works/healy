@@ -60,8 +60,8 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                         <div className="blog--tag">
                            <Link href="#">Business</Link>
                         </div>
-                        <h2 className="blog--post--title">
-                           {single_blog?.title ? single_blog.title : title_1}</h2>
+                        <h1 className="blog--post--title">
+                           {single_blog?.title ? single_blog.title : title_1}</h1>
                         <div className="blog--post--meta mb-20">
                            <ul className="list-wrap">
                               <li><span><i className="far fa-eye"></i>232 Views</span></li>
@@ -76,15 +76,15 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                               <Image src={innerBlogThumb_2} alt="img" />
                            </div>
                            <div className="blog-details-wrap">
-                              <h3 className="title">{title_2}</h3>
+                              <h1 className="title">{title_2}</h1>
                               <p>{desc_3}</p>
                            </div>
                            <div className="blog-details-wrap">
-                              <h3 className="title">{title_3}</h3>
+                              <h1 className="title">{title_3}</h1>
                               <p>{desc_4}</p>
                            </div>
                            <div className="blog-details-wrap border-none">
-                              <h3 className="title">{title_3}</h3>
+                              <h1 className="title">{title_3}</h1>
                               <div className="b-details-list">
                                  <ul className="list-wrap">
                                     {list.map((list, i) => (
@@ -101,7 +101,7 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                            <div className="row mt-45 mb-50">
                               <div className="col-xl-6 col-md-7">
                                  <div className="d-post-tag">
-                                    <h5>Releted Tags</h5>
+                                    <h1>Releted Tags</h1>
                                     <ul className="list-wrap">
                                        {tag.map((tag, i) => <li key={i}><Link href="#">{tag}</Link></li>)}
                                     </ul>
@@ -109,7 +109,7 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                               </div>
                               <div className="col-xl-6 col-md-5">
                                  <div className="post-share text-md-end">
-                                    <h5>Social Share</h5>
+                                    <h1>Social Share</h1>
                                     <ul className="list-wrap">
                                        {social_icon.map((icon, i) => <li key={i}><Link href="#"><i className={icon}></i></Link></li>)}
                                     </ul>
@@ -122,7 +122,7 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                               <div className="col-md-5">
                                  <div className="prev-link">
                                     <span>Prev Post</span>
-                                    <h4><Link href="#">Tips on Minimalist</Link></h4>
+                                    <h1><Link href="#">Tips on Minimalist</Link></h1>
                                  </div>
                               </div>
                               <div className="col-md-2 text-start text-md-center">
@@ -131,7 +131,7 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                               <div className="col-md-5">
                                  <div className="next-link text-start text-md-end">
                                     <span>Next Post</span>
-                                    <h4><Link href="#">Less Is More</Link></h4>
+                                    <h1><Link href="#">Less Is More</Link></h1>
                                  </div>
                               </div>
                            </div>
@@ -143,7 +143,7 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                            </div>
                            <div className="bd-avatar-info">
                               <span>Written by</span>
-                              <h4>Rosalina D. William</h4>
+                              <h1>Rosalina D. William</h1>
                               <p>{desc_6}</p>
                            </div>
                         </div>

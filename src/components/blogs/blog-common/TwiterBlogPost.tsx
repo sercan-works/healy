@@ -35,7 +35,7 @@ const TwiterBlogPost = () => {
    return (
       <div className="widget mb-40">
          <div className="sidebar-title mb-25">
-            <h3 className="title">Twitter Feeds</h3>
+            <h1 className="title">Twitter Feeds</h1>
          </div>
          <div className="twitter-post">
             <ul className="list-wrap">

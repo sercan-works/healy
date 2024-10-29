@@ -9,8 +9,8 @@ const HomeTwoBlog = () => {
             <div className="row justify-content-center">
                <div className="col-xl-6 col-lg-8">
                   <div className="tg-section-title text-center mb-60">
-                     <h6 className="sub-title">Latest News</h6>
-                     <h2 className="title">Suxnix News Feeds</h2>
+                     <h1 className="sub-title">Latest News</h1>
+                     <h1 className="title">Suxnix News Feeds</h1>
                   </div>
                </div>
             </div>
@@ -26,7 +26,7 @@ const HomeTwoBlog = () => {
                         </div>
                         <div className="tg-blog-post-content">
                            <div className="post-date"><i className="far fa-calendar-alt"></i>{item.date}</div>
-                           <h4 className="title"><Link href="/blog-details">{item.title}</Link></h4>
+                           <h1 className="title"><Link href="/blog-details">{item.title}</Link></h1>
                            <Link href="/blog-details" className="read-more"><span>Read More</span> <i className="fas fa-arrow-right"></i></Link>
                         </div>
                      </div>

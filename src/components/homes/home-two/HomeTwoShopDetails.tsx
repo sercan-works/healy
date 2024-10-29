@@ -60,7 +60,7 @@ const HomeTwoShopDetails = () => {
                <div className="col-xl-6 col-lg-8">
                   <div className="tg-section-title text-center mb-70">
                      <span className="sub-title">purchase product</span>
-                     <h2 className="title">take your supplements</h2>
+                     <h1 className="title">take your supplements</h1>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur recusandae voluptates sequi voluptatibus error! gorem ipsum dolor sit.</p>
                   </div>
                </div>
@@ -69,7 +69,7 @@ const HomeTwoShopDetails = () => {
                
                <div className="col-lg-6">
                   <div className="inner-shop-details-content">
-                     <h4 className="title">{title}</h4>
+                     <h1 className="title">{title}</h1>
                      <div className="tg-shop-details-review">
                         <div className="rating">
                            {rating?.map((rating, i) => <i key={i} className={rating}></i>)}
@@ -77,8 +77,8 @@ const HomeTwoShopDetails = () => {
                         <span>( 2 Customer Review )</span>
                      </div>
                      <div className="inner-shop-details-price">
-                        <h2 className="price">$29.99</h2>
-                        <h5 className="stock-status">- IN Stock</h5>
+                        <h1 className="price">$29.99</h1>
+                        <h1 className="stock-status">- IN Stock</h1>
                      </div>
                      <p>{desc}</p>
 

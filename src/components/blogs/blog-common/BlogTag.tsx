@@ -5,7 +5,7 @@ const BlogTag = () => {
    return (
       <div className="widget mb-40">
          <div className="sidebar-title mb-25">
-            <h3 className="title">Popular Tags</h3>
+            <h1 className="title">Popular Tags</h1>
          </div>
          <div className="widget-tag">
             <ul className="list-wrap">

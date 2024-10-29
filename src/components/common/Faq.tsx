@@ -65,11 +65,11 @@ const FAQ = () => {
       <div className="accordion" id="accordionExample">
          {faqData.map((item, index) => (
             <div key={item.id} className="accordion-item">
-               <h2 className="accordion-header">
+               <h1 className="accordion-header">
                   <button className={`accordion-button ${item.showAnswer ? "" : "collapsed"}`} onClick={() => toggleAnswer(index)} type="button">
                      <span className='count'>{index + 1 > 9 ? index + 1 : `0${index + 1 + "."}`}</span>   {item.question}
                   </button>
-               </h2>
+               </h1>
                {item.showAnswer && (
                   <div id="collapseOne" className="accordion-collapse collapse show">
                      <div className="accordion-body">

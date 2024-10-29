@@ -44,7 +44,7 @@ const BlogRcPost = () => {
    return (
       <div className="widget mb-40">
          <div className="sidebar-title mb-25">
-            <h3 className="title">Popular Feeds</h3>
+            <h1 className="title">Popular Feeds</h1>
          </div>
          {rc_post_data.map((item) => (
             <div key={item.id} className="rc-post">
@@ -52,7 +52,7 @@ const BlogRcPost = () => {
                   <Link href="/blog-details"><Image src={item.img} alt="img" /></Link>
                </div>
                <div className="rc-post-content">
-                  <h5><Link href="/blog-details">{item.title}</Link></h5>
+                  <h1><Link href="/blog-details">{item.title}</Link></h1>
                   <div className="rc-post-date">
                      <span><i className="far fa-calendar-alt"></i>{item.date}</span>
                   </div>

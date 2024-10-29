@@ -19,7 +19,7 @@ const HomeOneFormula = () => {
                   <div className="formula-content">
                      <div className="section-title white-title mb-50">
                         <p className="sub-title">.. Suxnix Formula ..</p>
-                        <h2 className="title">Why We Chose This Formula</h2>
+                        <h1 className="title">Why We Chose This Formula</h1>
                      </div>
                      <ul className="formula-list list-wrap">
                         {fonrmula_list.map((list, i) => (

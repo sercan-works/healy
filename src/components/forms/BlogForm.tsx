@@ -33,7 +33,7 @@ const BlogForm = () => {
    return (
       <div className="post-comments-form">
          <div className="comment-wrap-title mb-35">
-            <h5>Post Comment</h5>
+            <h1>Post Comment</h1>
          </div>
          <div className="comment-box">
             <form onSubmit={handleSubmit(onSubmit)} className="comment-form">

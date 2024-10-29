@@ -17,11 +17,11 @@ const LogingArea = ({ style }: any) => {
                   <div className="eg-login__wrapper">
                      {style ? (
                         <div className="eg-login__top text-center mb-30">
-                           <h3 className="eg-login__title">Sing Up Suxnix.</h3>
+                           <h1 className="eg-login__title">Sing Up Suxnix.</h1>
                            <p>Already have an account? <span><Link href="/login">Sing In</Link></span></p>
                         </div>) : (
                         <div className="eg-login__top text-center mb-30">
-                           <h3 className="eg-login__title">Login to Suxnix.</h3>
+                           <h1 className="eg-login__title">Login to Suxnix.</h1>
                            <p>Don’t have an account? <span><Link href="/register">Create a free account</Link></span></p>
                         </div>)}
                      <div className="eg-login__option">

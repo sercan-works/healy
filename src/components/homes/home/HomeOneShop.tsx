@@ -85,7 +85,7 @@ const HomeOneShop = ({ style, inner_style }: any) => {
       <section className={`home-shop-area ${inner_style?"inner-home-shop":""}`}>
          <div className="container">
             <div className="related-products-wrap">
-               {style ? <h2 className="title">DİĞER HEALY FREKANS CİHAZLARI</h2> : ""}
+               {style ? <h1 className="title">DİĞER HEALY FREKANS CİHAZLARI</h1> : ""}
                <Slider {...settings} className="row home-shop-active">
                   {shop_data.filter((item) => item.page === "home_1").map((item) => (
                      <div key={item.id} className="col-xl-3">
@@ -98,7 +98,7 @@ const HomeOneShop = ({ style, inner_style }: any) => {
                               <div className={`shop-thumb-shape ${item.class_name}`}></div>
                            </div>
                            <div className="home-shop-content">
-                              <h4 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h4>
+                              <h1 className="title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h1>
                               <span className="home-shop-price">{item.price}₺</span>
                               {/* <div className="home-shop-rating">
                                  <Rating initialValue={item.rating} size={20} readonly={true} />

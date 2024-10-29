@@ -24,7 +24,7 @@ const HomeTwoSupplement = () => {
                      <div className="tg-supplement-content mt-60 wow fadeInLeft" data-wow-delay=".2s">
                         <div className="tg-section-title mb-25">
                            <span className="sub-title">ingredients</span>
-                           <h2 className="title">growth promoter <br /> supplement</h2>
+                           <h1 className="title">growth promoter <br /> supplement</h1>
                         </div>
                         <p>Vitamin Ipsum is simply dummy text of the printing and tysetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the when an unknown printer took a galley.</p>
                         <Link href="/shop" className="tg-btn view-btn">VIEW more</Link>

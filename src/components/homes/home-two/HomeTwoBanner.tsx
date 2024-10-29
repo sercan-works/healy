@@ -16,8 +16,8 @@ const HomeTwoBanner = () => {
           </div>
           <div className="col-xl-6 col-lg-6 col-md-10">
             <div className="tg-banner-content">
-              <h4 className="sub-title wow fadeInUp" data-wow-delay=".2s">Increased Energy!</h4>
-              <h2 className="title wow fadeInUp" data-wow-delay=".4s">Mix Protein Way <br /> To Growth</h2>
+              <h1 className="sub-title wow fadeInUp" data-wow-delay=".2s">Increased Energy!</h1>
+              <h1 className="title wow fadeInUp" data-wow-delay=".4s">Mix Protein Way <br /> To Growth</h1>
               <p className=" wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of lorem ipsum majority have suffered alteration in some.</p>
               <div className="tg-banner-btn wow fadeInUp" data-wow-delay=".8s">
                 <Link href="/shop-details" className="tg-btn">purchase now</Link>

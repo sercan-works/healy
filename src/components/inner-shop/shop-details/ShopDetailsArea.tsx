@@ -80,7 +80,7 @@ const ShopDetailsArea = ({ single_product }: any) => {
 
                   <div className="col-lg-6">
                      <div className="inner-shop-details-content">
-                        <h4 className="title">{single_product?.title ? single_product.title : title_1}</h4>
+                        <h1 className="title">{single_product?.title ? single_product.title : title_1}</h1>
                         <div className="inner-shop-details-meta">
                            <ul className="list-wrap">
                               <li>Marka : <Link href="/shop">Healy</Link></li>
@@ -90,8 +90,8 @@ const ShopDetailsArea = ({ single_product }: any) => {
                         </div>
 
                         <div className="inner-shop-details-price">
-                           <h2 className="price">{single_product?.price ? single_product.price : 29.99}₺</h2>
-                           <h5 className="stock-status">- STOKTA</h5>
+                           <h1 className="price">{single_product?.price ? single_product.price : 29.99}₺</h1>
+                           <h1 className="stock-status">- STOKTA</h1>
                         </div>
                         <p>{single_product?.desc ? single_product.desc : desc_1}</p>
                         <div className="inner-shop-details-list">
@@ -144,9 +144,9 @@ const ShopDetailsArea = ({ single_product }: any) => {
                         <div className="tab-content" id="myTabContentTwo">
                            <div className={`tab-pane fade ${activeTab === 0 ? 'show active' : ''}`} id="description">
                               <div className="product-desc-content">
-                                 <h4 className="title">{single_product?.title ? single_product.title : title_2}</h4>
+                                 <h1 className="title">{single_product?.title ? single_product.title : title_2}</h1>
                                  <p>{single_product?.desc ? single_product.desc : desc_2}</p>
-                                 <h4 className="title">{single_product?.title_3 ? single_product.title_3 : title_3}</h4>
+                                 <h1 className="title">{single_product?.title_3 ? single_product.title_3 : title_3}</h1>
                                  <ul className="product-desc-list list-wrap">
                                     {single_product?.list ? single_product.list.map((list, index) => (<li key={index}>{list}</li>)) : list.map((list, index) => (<li key={index}>{list}</li>))}
                                  </ul>

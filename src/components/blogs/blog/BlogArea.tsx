@@ -120,7 +120,7 @@ const BlogArea = () => {
                                     <Image src={item.quote} alt="" />
                                  </div>:""}
                                  <div className="fix">
-                                    <h2 className="blog--post--title"><Link href="/blog-details">{item.title}</Link></h2>
+                                    <h1 className="blog--post--title"><Link href="/blog-details">{item.title}</Link></h1>
                                     <div className="blog--post--meta">
                                        <ul className="list-wrap">
                                           <li><span><i className="far fa-eye"></i>{item.view}</span></li>
@@ -135,7 +135,7 @@ const BlogArea = () => {
                                  <div className="blog--tag">
                                     <Link href="#">{item.tag}</Link>
                                  </div>
-                                 <h2 className="blog--post--title"><Link href={`/blog-details/${item.id}`}>{item.title}</Link></h2>
+                                 <h1 className="blog--post--title"><Link href={`/blog-details/${item.id}`}>{item.title}</Link></h1>
                                  <div className={`blog--post--meta ${item.blog_bg ? "" : "mb-20"}`}>
                                     <ul className="list-wrap">
                                        <li><span><i className="far fa-eye"></i>{item.view}</span></li>

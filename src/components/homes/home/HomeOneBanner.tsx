@@ -18,7 +18,7 @@ const HomeOneBanner = () => {
                <div className="col-xxl-8 col-xl-7 col-lg-8 col-md-10">
                   <div className="banner-content text-center">
                      <p className="banner-caption">.. FREKANSIN GÜCÜNÜ KEŞFET ..</p>
-                     <h2 className="title">Ruhunun <span className='text-secondary'>enerjisini</span> keşfet <span className='text-secondary'>potansiyelini</span> açığa çıkar.</h2>
+                     <h1 className="title">Ruhunun <span className='text-secondary'>enerjisini</span> keşfet <span className='text-secondary'>potansiyelini</span> açığa çıkar.</h1>
                      <Link href="/shop" className="eg-btn btn-two">Healy&apos;i Keşfet</Link>
                   </div>
                </div>

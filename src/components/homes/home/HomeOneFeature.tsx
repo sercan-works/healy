@@ -61,7 +61,7 @@ const    HomeOneFeature = ({style}:any) => {
                                    {item.icon}
                                  </div>
                                  <div className="features-content">
-                                    <h4 className="title">{item.title}</h4>
+                                    <h1 className="title">{item.title}</h1>
                                     <p>{item.desc}</p>
                                  </div>
                               </div>

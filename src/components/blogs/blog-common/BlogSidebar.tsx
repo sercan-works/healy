@@ -15,14 +15,14 @@ const BlogSidebar = () => {
       <aside className="blog-sidebar pl-20">
          <div className="widget mb-40">
             <div className="sidebar-title mb-25">
-               <h3 className="title">About Me</h3>
+               <h1 className="title">About Me</h1>
             </div>
             <div className="blog-about text-center">
                <div className="blog-avatar-img mb-25">
                   <Image src={blogMe} alt="img" />
                </div>
                <div className="b-about-content mb-20">
-                  <h4>Rosalina D. Willaimson</h4>
+                  <h1>Rosalina D. Willaimson</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore ullamco aliquip commodo.</p>
                </div>
                <div className="b-about-social">
@@ -33,7 +33,7 @@ const BlogSidebar = () => {
 
          <div className="widget mb-40">
             <div className="sidebar-title mb-25">
-               <h3 className="title">Search Objects</h3>
+               <h1 className="title">Search Objects</h1>
             </div>
             <div className="sidebar-search-form position-relative">
                <form onSubmit={(e) => e.preventDefault()}>
@@ -47,7 +47,7 @@ const BlogSidebar = () => {
 
          <div className="widget mb-40">
             <div className="sidebar-title mb-25">
-               <h3 className="title">Never Miss News</h3>
+               <h1 className="title">Never Miss News</h1>
             </div>
             <div className="sidebar-social">
                <SocialIcon />

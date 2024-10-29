@@ -40,7 +40,7 @@ const HomeTwoVideoArea = () => {
                      <div className="tg-video-content wow fadeInRight" data-wow-delay=".2s">
                         <div className="tg-section-title white mb-30">
                            <span className="sub-title">{sub_title}</span>
-                           <h2 className="title white-text">{title}</h2>
+                           <h1 className="title white-text">{title}</h1>
                         </div>
                         <p className="info-one">{desc_1}</p>
                         <p className="info-two">{desc_2}</p>

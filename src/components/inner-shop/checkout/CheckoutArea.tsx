@@ -42,7 +42,7 @@ const CheckoutArea = () => {
                <div className="col-lg-7">
                   <div className="eg-checkout__wrapper">
                      <div className="eg-checkout__billing-address">
-                        <h3 className="eg-checkout__title mb-35">Billing details</h3>
+                        <h1 className="eg-checkout__title mb-35">Billing details</h1>
                         <form className="eg-checkout__form">
                            <div className="row bs-gutter-x-20">
                               <div className="col-xl-12">
@@ -115,12 +115,12 @@ const CheckoutArea = () => {
                </div>
                <div className="col-lg-5">
                   <div className="eg-order__place">
-                     <h3 className="eg-checkout__title">Your Order</h3>
+                     <h1 className="eg-checkout__title">Your Order</h1>
                      <div className="eg-order__info-list">
                         <ul>
                            <li className="eg-order__info-list-header">
-                              <h6>Product</h6>
-                              <h6>Total</h6>
+                              <h1>Product</h1>
+                              <h1>Total</h1>
                            </li>
 
                            {/* <!-- item list --> */}

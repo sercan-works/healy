@@ -105,10 +105,10 @@ const HomeOnefeatureProduct = ({ style }: any) => {
               </div>
               <div className="col-lg-6 col-md-10">
                 <div className="features-product-content">
-                  <h2 className="title">
+                  <h1 className="title">
                     <Link href="/shop-details">{item.title}</Link>
-                  </h2>
-                  <h6 className="features-product-quantity">{item.quantity}</h6>
+                  </h1>
+                  <h1 className="features-product-quantity">{item.quantity}</h1>
                   <p>{item.desc}</p>
                   <div className="features-product-bottom">
                     <Link href={`/shop-details/${item.id}`} target="_blank" className="eg-btn">

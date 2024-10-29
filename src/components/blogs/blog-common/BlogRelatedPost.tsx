@@ -32,7 +32,7 @@ const rc_post_data: DataType[] = [
 const BlogRelatedPost = () => {
    return (
       <div className="related-post mt-45">
-         <h3>Releted Post</h3>
+         <h1>Releted Post</h1>
          <div className="row">
             {rc_post_data.map((item) => (
                <div key={item.id} className="col-md-6">
@@ -42,7 +42,7 @@ const BlogRelatedPost = () => {
                      </div>
                      <div className="rp-content">
                         <span className="rp-date"><i className="far fa-calendar-alt"></i>{item.date}</span>
-                        <h4><Link href="#">{item.title}</Link></h4>
+                        <h1><Link href="#">{item.title}</Link></h1>
                         <p>{item.desc}</p>
                      </div>
                   </div>

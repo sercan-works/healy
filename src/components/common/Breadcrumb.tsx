@@ -11,7 +11,7 @@ const Breadcrumb = ({ title }: any) => {
             <div className="row justify-content-center">
                <div className="col-xl-10">
                   <div className="breadcrumb-content text-center">
-                     <h2 className="title">{title}</h2>
+                     <h1 className="title">{title}</h1>
                      <nav aria-label="Breadcrumbs" className="breadcrumb-trail">
                         <ul className="breadcrumb">
                            <li className="breadcrumb-item trail-item trail-begin">

@@ -73,7 +73,7 @@ const HomeOnePricing = ({ style, inner_style }: any) => {
                <div className="col-xl-6 col-lg-8">
                   <div className="section-title text-center mb-55">
                      <p className="sub-title">.. Suxnix Plans ..</p>
-                     <h2 className="title">SUPPLEMENT PACKAGES</h2>
+                     <h1 className="title">SUPPLEMENT PACKAGES</h1>
                   </div>
                </div>
             </div>
@@ -83,25 +83,25 @@ const HomeOnePricing = ({ style, inner_style }: any) => {
                      <div key={item.id} className="col-lg-4 col-md-6 col-sm-9">
                         <div className={`pricing-item mb-30 ${item.class_name} ${style ? "" : "wow fadeInUp"}`} data-wow-delay={style ? "" : item.data_delay}>
                            {item.top_title ? <div className="pricing-title text-center mb-10">
-                              <h4 className="title">{item.top_title}</h4>
+                              <h1 className="title">{item.top_title}</h1>
                            </div> : ""
                            }
                            <div className="pricing__box text-center">
                               <div className="pricing-hade">
                                  <span>{item.smail_title}</span>
-                                 <h3 className="title">{item.title}</h3>
+                                 <h1 className="title">{item.title}</h1>
                                  <p>{item.desc}</p>
                               </div>
                               <div className="pricing-img">
                                  <Image src={item.thumb} alt="img" />
                               </div>
                               <div className="pricing-price">
-                                 <h4 className="price">{item.price}₺</h4>
+                                 <h1 className="price">{item.price}₺</h1>
                                  <span>per <br /> bottle</span>
                               </div>
-                              <h5 className="total">(${item.total} TOTAL)</h5>
+                              <h1 className="total">(${item.total} TOTAL)</h1>
                               <div className="price-savings">
-                                 <h4 className="save">{item.savings}</h4>
+                                 <h1 className="save">{item.savings}</h1>
                                  <span>{item.shipping}</span>
                               </div>
                               <div className="pricing-btn mb-15">

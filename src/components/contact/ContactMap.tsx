@@ -14,7 +14,7 @@ const ContactMap = () => {
                   <div className="contact-form-wrap">
                      <div className="section-title mb-50">
                         <p className="sub-title">.. request make ..</p>
-                        <h2 className="title">Asked Anything You <br /> Want To Know</h2>
+                        <h1 className="title">Asked Anything You <br /> Want To Know</h1>
                      </div>
                      <ContactForm/>
                   </div>

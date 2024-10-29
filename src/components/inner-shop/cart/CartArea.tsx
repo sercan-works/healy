@@ -68,7 +68,7 @@ const CartArea = () => {
                                                 <Image src={item.thumb} width={100} height={100} alt="bemet" />
                                              </Link>
                                           </div>
-                                          <h3 className="eg-cart__meta-title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h3>
+                                          <h1 className="eg-cart__meta-title"><Link href={`/shop-details/${item.id}`}>{item.title}</Link></h1>
                                        </td>
                                        <td className="eg-cart__price"><span>{item.price}</span></td>
                                        <td className="eg-product-details__quantity-box">
@@ -120,7 +120,7 @@ const CartArea = () => {
                            <span className="eg-cart-checkout__top-price">${total.toFixed(2)}</span>
                         </div>
                         <div className="eg-cart-checkout__shipping">
-                           <h4 className="eg-cart-checkout__shipping-title">Shipping</h4>
+                           <h1 className="eg-cart-checkout__shipping-title">Shipping</h1>
 
                            <div className="eg-cart-checkout__shipping-option-wrapper">
                               <div className="eg-cart-checkout__shipping-option">

@@ -17,7 +17,7 @@ const BlogInstagram = () => {
    return (
       <div className="widget mb-40">
          <div className="sidebar-title mb-25">
-            <h3 className="title">Instagram Feeds</h3>
+            <h1 className="title">Instagram Feeds</h1>
          </div>
          <div className="sidebar-insta-post">
             <ul className="list-wrap">

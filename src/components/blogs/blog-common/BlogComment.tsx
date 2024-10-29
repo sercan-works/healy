@@ -42,7 +42,7 @@ const BlogComment = () => {
    return (
       <div className="comment-wrap mb-45">
          <div className="comment-wrap-title mb-35">
-            <h5>03 Comments</h5>
+            <h1>03 Comments</h1>
          </div>
          <div className="latest-comments">
             <ul className="list-wrap">
@@ -54,7 +54,7 @@ const BlogComment = () => {
                         </div>
                         <div className="comment-text">
                            <div className="avatar-name mb-10">
-                              <h6>{item.avatar_name} <Link href="#" className="comment-reply-link"><i className="fas fa-reply"></i>Reply</Link></h6>
+                              <h1>{item.avatar_name} <Link href="#" className="comment-reply-link"><i className="fas fa-reply"></i>Reply</Link></h1>
                               <span>{item.date}</span>
                            </div>
                            <p>{item.desc}</p>

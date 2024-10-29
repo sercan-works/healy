@@ -57,7 +57,7 @@ const FooterTwo = () => {
 
                      <div className="col-lg-4 col-md-5 col-sm-8">
                         <div className="footer-widget">
-                           <h4 className="fw-title">About Us</h4>
+                           <h1 className="fw-title">About Us</h1>
                            <div className="tg-footer-rc-post">
                               {rc_post.map((item, index) => (
                                  <div key={index} className="footer-post-item">
@@ -68,7 +68,7 @@ const FooterTwo = () => {
                                     </div>
                                     <div className="content">
                                        <span><i className="far fa-clock"></i> {item.rc_date}</span>
-                                       <h6 className="title"><Link href="/blog-details">{item.rc_title}</Link></h6>
+                                       <h1 className="title"><Link href="/blog-details">{item.rc_title}</Link></h1>
                                     </div>
                                  </div>
                               ))}
@@ -78,7 +78,7 @@ const FooterTwo = () => {
 
                      <div className="col-xl-2 col-lg-3 col-md-5 col-sm-4">
                         <div className="footer-widget widget_nav_menu">
-                           <h4 className="fw-title">Support</h4>
+                           <h1 className="fw-title">Support</h1>
                            <ul className="list-wrap">
                               {footer_list.map((list, i) => (
                                  <li key={i}><Link href={list.link}>{list.title}</Link></li>
@@ -89,7 +89,7 @@ const FooterTwo = () => {
 
                      <div className="col-xl-3 col-lg-4 col-md-5">
                         <div className="footer-widget">
-                           <h4 className="fw-title">Newsletter</h4>
+                           <h1 className="fw-title">Newsletter</h1>
                            <div className="footer-newsletter-wrap">
                               <p>Making for beauty especially the <span>*</span></p>
                               <form action="#">
@@ -102,7 +102,7 @@ const FooterTwo = () => {
                                  <Image src={footer_logo_2} alt="img" />
                               </div>
                               <div className="confidential-content">
-                                 <h4 className="con-title">100% Confidential</h4>
+                                 <h1 className="con-title">100% Confidential</h1>
                                  <span>25k Active Customer</span>
                               </div>
                            </div>

@@ -19,7 +19,7 @@ const HomeTwoShop = () => {
                <div className="col-lg-8">
                   <div className="tg-section-title text-center mb-60">
                      <span className="sub-title">RECENT PRODUCTS</span>
-                     <h2 className="title">Supplement PRODUCT</h2>
+                     <h1 className="title">Supplement PRODUCT</h1>
                   </div>
                </div>
             </div>
@@ -42,7 +42,7 @@ const HomeTwoShop = () => {
                               <div className="tg-shop-cat">
                                  <Link href="/shop">{item.tag}</Link>
                               </div>
-                              <h4 className="title"><Link href={`/shop-details/${item.id}`}>Box Full of Muscles</Link></h4>
+                              <h1 className="title"><Link href={`/shop-details/${item.id}`}>Box Full of Muscles</Link></h1>
                               <div className="tg-shop-price"> {item.old_price ? <del>${item.old_price}</del> : ""} ${item.price}</div>
                            </div>
                         </div>
