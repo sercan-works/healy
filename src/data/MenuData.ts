@@ -37,7 +37,7 @@ const menu_data: MenuItem[] = [
       page: "header_1",
       has_dropdown: false,
       title: "Cihazlarımız",
-      link: "/shop",
+      link: "/healy-cihazlar",
    },
    {
       id: 4,
@@ -45,13 +45,6 @@ const menu_data: MenuItem[] = [
       has_dropdown: false,
       title: "Healy Programları",
       link: "/healy-programlar",
-   },
-   {
-      id: 4,
-      page: "header_1",
-      has_dropdown: false,
-      title: "Healy Blog",
-      link: "/blog",
    },
    // {
    //    id: 5,
