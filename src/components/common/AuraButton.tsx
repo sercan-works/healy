@@ -19,7 +19,7 @@ const AuraButton: React.FC<AuraButtonProps> = ({ onClick }) => {
   return (
     <>
       <button 
-        className="fixed bottom-32 right-2 flex items-center gap-2 text-white p-1 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 z-50 md:px-3 md:py-3 group"
+        className="fixed bottom-32 lg:bottom-40 lg:right-2 lg:pr-32 lg:py-2 right-2 flex items-center gap-2 text-white hover:bg-opacity-85 bg-indigo-500 bg-opacity-50 sm:py-1 sm:px-1 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 z-50 md:px-3 md:py-3 group"
         onClick={handleClick}
         aria-label="Aura"
       >
@@ -33,7 +33,9 @@ const AuraButton: React.FC<AuraButtonProps> = ({ onClick }) => {
           priority // Hızlı yükleme için
           className="rounded-full"
         />
+           <h1 className="absolute hidden lg:block text-white text-2xl right-16 font-bold">Aura</h1>
       </button>
+   
       {showChat && <ChatBot />}
     </>
   );

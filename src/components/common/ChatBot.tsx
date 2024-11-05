@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
-import { FaPaperPlane } from 'react-icons/fa';
+import { FaPaperPlane, FaTimes } from 'react-icons/fa';
 import OpenAI from 'openai';
 
 const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [messages, setMessages] = useState<Array<{text: string, isBot: boolean}>>([]);
   const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSend = async () => {
     if (!input.trim()) return;
 
-    // Kullanıcı mesajını ekle
     setMessages(prev => [...prev, { text: input, isBot: false }]);
+    setIsLoading(true);
     
     try {
       const openai = new OpenAI({
         apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
         dangerouslyAllowBrowser: true,
-    });
+      });
 
       const completion = await openai.chat.completions.create({
         model: "gpt-4o-mini",
@@ -29,21 +30,24 @@ const ChatBot: React.FC = () => {
     } catch (error) {
       console.error('Error:', error);
       setMessages(prev => [...prev, { text: 'Bir hata oluştu, lütfen tekrar deneyin.', isBot: true }]);
+    } finally {
+      setIsLoading(false);
     }
 
     setInput('');
   };
 
   return isOpen ? (
-    <div className="fixed bottom-24 right-5 w-[350px] h-[500px] bg-white rounded-xl shadow-2xl flex flex-col z-50 md:w-[400px] overflow-hidden">
+    <div className="fixed inset-0 w-full h-full lg:inset-auto lg:right-4 lg:bottom-4 lg:w-[400px] lg:h-[600px] bg-white flex flex-col z-50 lg:rounded-xl lg:shadow-2xl">
       {/* Header */}
-      <div className="bg-green-500 text-white p-4 flex justify-between items-center">
-        <h3 className="font-semibold text-lg">Chat Bot</h3>
+      <div className="bg-indigo-500 text-white p-4 flex justify-between items-center lg:rounded-t-xl">
+        <h3 className="font-semibold text-lg text-white">Aura</h3>
+        <h4 className="text-white text-sm">healy asistanınız...</h4>
         <button 
           onClick={() => setIsOpen(false)}
           className="text-2xl hover:opacity-80"
         >
-          ×
+          <FaTimes />
         </button>
       </div>
       
@@ -61,6 +65,15 @@ const ChatBot: React.FC = () => {
             {msg.text}
           </div>
         ))}
+        {isLoading && (
+          <div className="max-w-[80%] mb-3 p-3 rounded-lg bg-gray-100 mr-auto">
+            <div className="flex gap-1">
+              <div className="w-2 h-2 rounded-full bg-gray-500 animate-bounce"></div>
+              <div className="w-2 h-2 rounded-full bg-gray-500 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-2 h-2 rounded-full bg-gray-500 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+            </div>
+          </div>
+        )}
       </div>
       
       {/* Input */}
@@ -75,7 +88,7 @@ const ChatBot: React.FC = () => {
         />
         <button 
           onClick={handleSend}
-          className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+          className="bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition-colors"
         >
           <FaPaperPlane />
         </button>
