@@ -21,7 +21,7 @@ const contact_data: DataType[] = [
       id: 2,
       icon: <FaWhatsapp />,
       title: "WHATSAPP",
-      info: (<><Link href="https://wa.me/905454467721" target="_blank">Sohbete Başla</Link></>),
+      info: (<><Link href="https://wa.me/905516926848" target="_blank">Sohbete Başla</Link></>),
    },
    {
       id: 3,

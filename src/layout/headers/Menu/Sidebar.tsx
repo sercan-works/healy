@@ -21,11 +21,12 @@ const Sidebar = ({ style, isActive, setIsActive }: any) => {
                     </div>
                     <div className="social-links">
                         <ul className="clearfix">
-                            <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-twitter"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-instagram"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-linkedin-in"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-youtube"></i></Link></li>
+                            <li>
+                                <Link href="https://www.instagram.com/sercan_healy/" target="_blank"><i className="fab fa-instagram"></i></Link>
+                            </li>
+                            <li>
+                                <Link href="https://wa.me/905516926848" target="_blank"><i className="fab fa-whatsapp"></i></Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>

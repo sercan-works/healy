@@ -16,6 +16,7 @@ import { GiLightningFrequency } from "react-icons/gi";
 import React from 'react';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaCanadianMapleLeaf } from "react-icons/fa6";
+import { BsInstagram } from "react-icons/bs";
 
 const HeaderOne = ({ style }: { style: any}) => {
     const { sticky } = UseSticky();
@@ -64,7 +65,7 @@ const HeaderOne = ({ style }: { style: any}) => {
                                         <div className="navbar-wrap main-menu d-none d-xl-flex justify-content-center">
                                             <NavMenuOne />
                                         </div>
-                                        <div className="header-action d-none d-sm-block">
+                                        <div className="header-action ">
                                             <ul>
                                                 {/* <li className="header-shop-cart">
                                                     <a style={{ cursor: "pointer" }} onClick={() => setCartOpen(true)} className="cart-count"><i className="flaticon-shopping-cart"></i>
@@ -72,7 +73,8 @@ const HeaderOne = ({ style }: { style: any}) => {
                                                     </a>
                                                     <HeaderCart />
                                                 </li> */}
-                                                <li className="header-search"><a style={{ cursor: "pointer" }} onClick={() => setIsSearch(true)}><i className="flaticon-search"></i></a></li>
+                                                {/* <li className="header-search"><a style={{ cursor: "pointer" }} onClick={() => setIsSearch(true)}><i className="flaticon-search"></i></a></li> */}
+                                                <li className="header-search  bg-gradient-to-tr from-pink-300 wow fadeInLeft to-indigo-300 rounded-xl"><a style={{ cursor: "pointer" }} href="https://www.instagram.com/sercan_healy/" target="_blank"><BsInstagram/></a></li>
                                                 <li className="offCanvas-btn d-none d-xl-block"><a style={{ cursor: "pointer" }} onClick={() => setOffCanvas(true)} className="bar-button"><i className="flaticon-layout"></i></a>
                                                 </li>
                                             </ul>

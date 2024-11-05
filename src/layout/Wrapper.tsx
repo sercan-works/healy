@@ -32,7 +32,7 @@ const Wrapper = ({ children }: any) => {
       {children}
       <ScrollToTop />
       <ToastContainer position="bottom-right" />
-      <WhatsAppButton phoneNumber="905454467721" />
+      <WhatsAppButton phoneNumber="905516926848" />
     </>
   );
 };
