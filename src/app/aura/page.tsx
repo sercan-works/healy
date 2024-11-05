@@ -20,7 +20,7 @@ const index = () => {
   return (
     <>
     <HeaderOne style={{display: "none"}} />
-    <div className='grid grid-cols-12 gap-10 min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-pink-400'>
+    <div className='grid grid-cols-12 sm:grid-cols-1 gap-10 min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-pink-400'>
         <div className='flex flex-col items-center justify-center col-span-12 md:col-span-6 rounded-lg gap-10 bg-white bg-opacity-50 p-4 m-20'>
             <h1 className='text-4xl mt-0 font-bold text-center text-white'>HEALY Aura</h1>
 

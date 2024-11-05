@@ -82,15 +82,21 @@ const ShopArea = () => {
    }
 
    // handle Price
-   const maxPrice = all_data.filter(item => item.page === "shop").reduce((max, item) => {
-      return item.price > max ? item.price : max;
-   }, 0);
+   const maxPrice: number = all_data
+      .filter(item => item.page === "shop")
+      .reduce((max, item) => {
+         const price = parseFloat(item.price.toString());
+         return price > max ? price : max;
+      }, 0);
    const [priceValue, setPriceValue] = useState([0, maxPrice]);
 
    useEffect(() => {
-      let filterPrice = all_data.filter((j) => j.price >= priceValue[0] && j.price <= priceValue[1]);
+      let filterPrice = all_data.filter((j) => {
+         const price = parseFloat(j.price.toString());
+         return price >= priceValue[0] && price <= priceValue[1];
+      });
       setProducts(filterPrice)
-   }, [priceValue])
+   }, [priceValue, all_data, setProducts])
 
    const handleChanges = (val: number[]) => {
       setPriceValue(val)
