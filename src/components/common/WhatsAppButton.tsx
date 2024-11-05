@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa';
 
+
 interface WhatsAppButtonProps {
   phoneNumber: string;
   message?: string;

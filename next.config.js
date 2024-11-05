@@ -9,6 +9,13 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+    domains: ['localhost'],
   },
   env: {
     POSTGRES_URL: process.env.POSTGRES_URL,
