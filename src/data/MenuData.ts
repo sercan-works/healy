@@ -40,6 +40,13 @@ const menu_data: MenuItem[] = [
       link: "/healy-cihazlar",
    },
    {
+      id: 10,
+      page: "header_1",
+      has_dropdown: false,
+      title: "Aura'ya Sor",
+      link: "/aura",
+   },
+   {
       id: 4,
       page: "header_1",
       has_dropdown: false,
