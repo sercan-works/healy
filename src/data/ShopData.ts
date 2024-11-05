@@ -24,8 +24,8 @@ interface dataType {
    category: string;
    tag?: string;
    title: string;
-   price: number;
-   old_price?: number;
+   price: number | string;
+   old_price?: number | string;
    desc?: string;
    rating: number;
    total_rating?: number;
@@ -114,7 +114,7 @@ const shopData: dataType[] = [
       title: "Healy Obsidian",
       class_name: "gray",
       category: "ACCESSORIES",
-      price: 166.440,
+      price: "166.440",
       total_rating: 0,
       tag: "Frekans Cihazı",
       rating: 0,
@@ -134,7 +134,7 @@ const shopData: dataType[] = [
       class_name: "blue",
       discount: 50,
       category: "man gym ",
-      price: 61.320,
+      price: "61.320",
       total_rating: 0,
       tag: "Frekans Cihazı",
       rating: 0,
@@ -156,7 +156,7 @@ const shopData: dataType[] = [
       discount: 50,
       category: "Frekans Cihazı",
       desc: "Healy Rezonans, kablosuz ve kablolu iletişim teknolojisi ile çalışan bir frekans cihazıdır. Bu cihaz, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar. Healy Rezonans, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar.",
-      price: 27.355,
+      price: "27.355",
       old_price: 54.710,
       total_rating: 10,
       tag: "",
@@ -299,8 +299,8 @@ const shopData: dataType[] = [
       discount: 50,
       category: "Frekans Cihazı",
       desc: "Healy Rezonans, kablosuz ve kablolu iletişim teknolojisi ile çalışan bir frekans cihazıdır. Bu cihaz, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar. Healy Rezonans, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar.",
-      price: 72.995,
-      old_price: 145.989,
+      price: "72.995",
+      old_price: "145.989",
       total_rating: 10,
       tag: "",
       rating: 5,
@@ -380,8 +380,8 @@ const shopData: dataType[] = [
       discount: 50,
       category: "Frekans Cihazı",
       desc: "Healy Rezonans, kablosuz ve kablolu iletişim teknolojisi ile çalışan bir frekans cihazıdır. Bu cihaz, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar. Healy Rezonans, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar.",
-      price: 166.440,
-      old_price: 166.440,
+      price: "166.440",
+      old_price: "166.440",
       total_rating: 10,
       tag: "",
       rating: 5,
@@ -463,8 +463,8 @@ const shopData: dataType[] = [
       discount: 50,
       category: "Frekans Cihazı",
       desc: "Healy Rezonans, kablosuz ve kablolu iletişim teknolojisi ile çalışan bir frekans cihazıdır. Bu cihaz, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar. Healy Rezonans, kablosuz iletişim teknolojisi sayesinde kullanıcıların kablosuz olarak bağlanmasını sağlar.",
-      price: 35.040,
-      old_price: 35.040,
+      price: "35.040",
+      old_price: "35.040",
       total_rating: 0,
       tag: "",
       rating: 0,

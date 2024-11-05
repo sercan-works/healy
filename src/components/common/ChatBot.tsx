@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaPaperPlane, FaTimes } from 'react-icons/fa';
 import OpenAI from 'openai';
 
@@ -7,6 +7,19 @@ const ChatBot: React.FC = () => {
   const [messages, setMessages] = useState<Array<{text: string, isBot: boolean}>>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
 
   const handleSend = async () => {
     if (!input.trim()) return;
@@ -22,7 +35,9 @@ const ChatBot: React.FC = () => {
 
       const completion = await openai.chat.completions.create({
         model: "gpt-4o-mini",
-        messages: [{ role: "user", content: input }]
+        messages: [
+          { role: "user", content: input }
+        ]
       });
 
       const botResponse = completion.choices[0]?.message?.content || 'Üzgünüm, bir hata oluştu.';
