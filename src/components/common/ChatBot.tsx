@@ -57,7 +57,7 @@ const ChatBot: React.FC = () => {
       {/* Header */}
       <div className="bg-indigo-500 text-white p-4 flex justify-between items-center lg:rounded-t-xl">
         <h3 className="font-semibold text-lg text-white">Aura</h3>
-        <h4 className="text-white text-sm">healy asistanınız...</h4>
+        <h4 className="text-white text-sm">yapay zeka healy asistanınız...</h4>
         <button 
           onClick={() => setIsOpen(false)}
           className="text-2xl hover:opacity-80"
