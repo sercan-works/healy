@@ -1,12 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaPaperPlane, FaTimes } from 'react-icons/fa';
 import OpenAI from 'openai';
+
+const suggestedMessages = [
+  "I-Ching konusunda yardım eder misin?",
+
+]
 
 const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [messages, setMessages] = useState<Array<{text: string, isBot: boolean}>>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showSuggestion, setShowSuggestion] = useState(true);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -21,6 +28,10 @@ const ChatBot: React.FC = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
   const handleSend = async () => {
     if (!input.trim()) return;
 
@@ -33,15 +44,43 @@ const ChatBot: React.FC = () => {
         dangerouslyAllowBrowser: true,
       });
 
-      const completion = await openai.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-          { role: "user", content: input }
-        ]
+      // Yeni bir thread oluştur (eğer henüz yoksa)
+      const thread = await openai.beta.threads.create();
+
+      // Kullanıcı mesajını threade ekle
+      await openai.beta.threads.messages.create(thread.id, {
+        role: "user",
+        content: input
       });
 
-      const botResponse = completion.choices[0]?.message?.content || 'Üzgünüm, bir hata oluştu.';
-      setMessages(prev => [...prev, { text: botResponse, isBot: true }]);
+      // Asistanı çalıştır
+      const run = await openai.beta.threads.runs.create(thread.id, {
+        assistant_id: "asst_F4e0D2fq7uR5co6ER6bhpFJG", // Eğittiğiniz asistanın ID'si
+      });
+
+      // Cevabı bekle
+      let response;
+      while (true) {
+        const runStatus = await openai.beta.threads.runs.retrieve(
+          thread.id,
+          run.id
+        );
+        
+        if (runStatus.status === 'completed') {
+          const messages = await openai.beta.threads.messages.list(thread.id);
+          response = messages.data[0].content[0].text.value;
+          break;
+        }
+        
+        if (runStatus.status === 'failed') {
+          throw new Error('Assistant failed to respond');
+        }
+        
+        // Kısa bir bekleme
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+
+      setMessages(prev => [...prev, { text: response, isBot: true }]);
     } catch (error) {
       console.error('Error:', error);
       setMessages(prev => [...prev, { text: 'Bir hata oluştu, lütfen tekrar deneyin.', isBot: true }]);
@@ -89,8 +128,23 @@ const ChatBot: React.FC = () => {
             </div>
           </div>
         )}
+        <div ref={messagesEndRef} />
       </div>
-      
+      {/* önerilen mesajlar */}
+      <div className="p-4">
+        {showSuggestion && (
+          <button 
+            onClick={() => {
+              setInput("I-Ching konusunda yardım eder misin?");
+              setShowSuggestion(false);
+              handleSend();
+            }}
+            className="w-full text-left text-gray-500 text-sm bg-gray-100 p-2 rounded-lg hover:bg-gray-200 transition-colors"
+          >
+            I-Ching konusunda yardım eder misin?
+          </button>
+        )}
+      </div>
       {/* Input */}
       <div className="border-t border-gray-200 p-4 flex gap-2">
         <input
