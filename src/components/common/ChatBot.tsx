@@ -68,7 +68,8 @@ const ChatBot: React.FC = () => {
         
         if (runStatus.status === 'completed') {
           const messages = await openai.beta.threads.messages.list(thread.id);
-          response = messages.data[0].content[0].text.value;
+          const content = messages.data[0].content[0];
+          response = content.type === 'text' ? content.text.value : 'Unsupported message type';
           break;
         }
         
