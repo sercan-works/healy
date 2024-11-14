@@ -29,7 +29,7 @@ const HeaderOne = ({ style }: { style: any}) => {
     return (
         <>
             {/* DUYURU */}
-            <div className="w-full bg-gradient-to-tr from-pink-400 to-gray-100 text-white p-2">
+            <div className="hidden md:block w-full bg-gradient-to-tr from-pink-400 to-gray-100 text-white p-2">
                 <p className="text-center text-white font-bold flex flex-row items-center justify-center gap-2 ">
                 <FaCanadianMapleLeaf className="text-yellow-300" /> KASIM AYINA ÖZEL <span className="text-yellow-300">%50 İNDİRİM</span> FIRSATLARINI KAÇIRMAYIN<FaCanadianMapleLeaf className="text-yellow-300" />
                 </p>
