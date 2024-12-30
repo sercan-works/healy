@@ -55,7 +55,7 @@ const shopData: dataType[] = [
       title: "Healy Rezonans",
       discount: 50,
       category: "cihaz",
-      price: 27.355,
+      price: 28.852, // old_price %50
       total_rating: 0,
       tag: "Frekans Cihazı",
       rating: 0,
@@ -75,7 +75,7 @@ const shopData: dataType[] = [
       class_name: "yellow",
       discount: 50,
       category: " ",
-      price: 45.663,
+      price: 48.164, // old_price %50
       total_rating: 0,
       tag: "Frekans Cihazı",
       rating: 0,
@@ -95,7 +95,7 @@ const shopData: dataType[] = [
       class_name: "purple",
       category: "ACCESSORIES",
       discount: 50,
-      price: 72.995,
+      price: 76.992, // old_price %50
       total_rating: 0,
       tag: "Frekans Cihazı ",
       rating: 0,

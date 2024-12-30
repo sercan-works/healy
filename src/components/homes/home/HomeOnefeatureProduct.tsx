@@ -40,8 +40,8 @@ const features_product_data: DataType[] = [
         , Uyku, Üçün Gücü, Deep Cycle, Öğrenme, Cilt.
       </>
     ),
-    new_price: 27.355,
-    old_price: 54.709
+    new_price: 28.852,
+    old_price: 57.705
   },
   {
     id: 2,
@@ -57,8 +57,8 @@ const features_product_data: DataType[] = [
         , Uyku, Üçün Gücü, Deep Cycle, Öğrenme, Cilt.
       </>
     ),
-    new_price: 45.663,
-    old_price: 91.325
+    new_price: 48.164,
+    old_price: 96.329
   },
   {
     id: 3,
@@ -76,8 +76,8 @@ const features_product_data: DataType[] = [
         Biyoenerjetik Savunma, İş, Güzellik.
       </>
     ),
-    new_price: 72.995,
-    old_price: 145.989
+    new_price: 76.992,
+    old_price: 153.985
   }
 ];
 
